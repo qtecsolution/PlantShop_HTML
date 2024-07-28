@@ -192,6 +192,38 @@ main {
     }
   }
 }
+.plantHome2 {
+  padding: 60px 0 32px 0;
+  &-inner {
+    &-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      &-title {
+        color: $black;
+        font-family: $DMfont;
+        font-size: size(40);
+        font-weight: 400;
+        line-height: size(48);
+      }
+      &-details {
+        color: $neutral-500;
+        font-family: $primaryfont;
+        font-size: size(16);
+        font-weight: 400;
+        line-height: size(24);
+        margin: 16px 0 32px 0;
+      }
+    }
+    figure {
+      width: 100%;
+      .plantHome-inner-imge {
+        width: 100%;
+      }
+    }
+  }
+}
 // Read our recent Blogs section
 .inner-recentBlock {
   background: $neutral-50;
@@ -204,7 +236,7 @@ main {
     line-height: size(48);
     text-align: center;
   }
-  p {
+  .section-description {
     color: $neutral-600;
     text-align: center;
     font-family: $primaryfont;
