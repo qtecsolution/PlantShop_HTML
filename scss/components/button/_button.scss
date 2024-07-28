@@ -1,0 +1,35 @@
+@use "../../global" as *;
+@use "../../partials" as *;
+
+.primary-button {
+  padding: size(12) size(20);
+  @include radius(4);
+  background: $primary-color-base;
+  color: $white;
+  font-family: $primaryfont;
+  font-size: size(16);
+  font-weight: 500;
+  line-height: 24px;
+  border: none;
+  transition: all 0.35s ease-in-out;
+  @include hover{
+    background: $primary-color-700;
+  }
+}
+
+.footer-btn {
+  color: $white;
+  font-family: $primaryfont;
+  font-size: size(14);
+  font-weight: 500;
+  line-height: size(20);
+  @include radius(4);
+  background: $primary-color-base;
+  padding: size(8) size(16);
+  outline: none;
+  border: none;
+  transition: all 0.35s ease-in-out;
+  @include hover {
+    background: $primary-color-700;
+  }
+}
