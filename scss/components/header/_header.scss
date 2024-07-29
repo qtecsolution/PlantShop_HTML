@@ -3,7 +3,11 @@
 
 .header {
   position: sticky;
-  background: $white;
+  width: 100%;
+  z-index: 20;
+  background-image: url('../../../assets/images/home/Banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   top: 0;
   .header-nav {
     align-items: center;

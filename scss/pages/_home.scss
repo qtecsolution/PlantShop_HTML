@@ -4,134 +4,50 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background: $neutral-50;
 }
 main {
   flex-grow: 1;
 }
 // Hero section start
-.hero-section {
-  padding: size(140) size(0) size(60) size(0);
-  @include breakpoint(tab992) {
-    padding-bottom: 173px;
-    padding-top: 100px;
-  }
-  &-inner {
+.hero-inner {
+  // max-width: 1440px;
+  // margin: auto;
+  background-image: url("../../assets/images/home/Banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px 0 44px 0;
+  &-content {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-
-    @include breakpoint(mobile768) {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: row;
-    }
-    @include breakpoint(tablet991) {
-      gap: size(50);
-    }
-    @include breakpoint(desktop1024) {
-      flex-direction: row;
-      gap: size(100);
-    }
-    @include breakpoint(desktop1200) {
-      // gap: size(266);
-    }
-
-    &-text {
-      // text-align: center;
-
-      @include breakpoint(mobile768) {
-        max-width: 249px;
+    gap: size(30);
+    justify-content: center;
+    height: 100%;
+    .title {
+      color: $primary-color-800;
+      font-family: $DMfont;
+      font-size: size(38);
+      @include breakpoint(tab992) {
+        font-size: size(48);
       }
-      @include breakpoint(desktop1024) {
-        max-width: 449px;
+      @include breakpoint(desktop1200) {
+        font-size: size(64);
+        line-height: size(80);
       }
-      .hero-button {
-        display: flex;
-        justify-content: center;
-        @include breakpoint(mobile576) {
-          display: block;
-        }
-      }
+      font-weight: 400;
     }
-  }
-
-  &-headding-text {
-    color: $neutral-950; //#19191a
-    font-family: $primaryfont;
-    text-align: center;
-    font-size: size(20);
-    font-weight: 700;
-
-    @include breakpoint(mobile576) {
-      text-align: left;
-    }
-    @include breakpoint(mobile768) {
-      font-size: size(24);
-    }
-    @include breakpoint(tab992) {
-      font-size: size(28);
-    }
-    @include breakpoint(desktop1024) {
-      font-size: size(40);
-    }
-    @include breakpoint(desktop1024) {
-      font-size: size(48);
-      line-height: size(60); /* 125% */
-    }
-  }
-  &-text {
-    color: $neutral-800; //#444546
-    font-family: $primaryfont;
-    text-align: center;
-    font-size: size(14);
-    line-height: size(28);
-    margin: size(15) size(0);
-
-    @include breakpoint(mobile768) {
-      font-size: size(15);
-      text-align: justify;
-    }
-    @include breakpoint(tab992) {
-      font-size: size(16);
-      margin: size(35) size(0);
-    }
-    @include breakpoint(desktop1024) {
+    .details {
+      color: $neutral-600;
+      font-family: $primaryfont;
       font-size: size(18);
+      line-height: size(28);
     }
-  }
-}
-
-.heading-text {
-  color: $footerbg; //#12141D;
-  font-family: $primaryfont;
-  font-size: size(25);
-  font-weight: 700;
-  line-height: size(46);
-
-  @include breakpoint(mobile414) {
-    font-size: size(25);
-  }
-  @include breakpoint(mobile480) {
-    font-size: size(25);
-  }
-  @include breakpoint(mobile480) {
-    font-size: size(25);
-  }
-  @include breakpoint(mobile576) {
-    font-size: size(25);
-  }
-  @include breakpoint(mobile768) {
-    font-size: size(30);
-  }
-  @include breakpoint(tab992) {
-    font-size: size(36);
   }
 }
 
 // Category section
 .category-inner {
-  background: red;
+  // background: red;
   margin-top: size(48);
   .category-inner-cart {
     figure {
@@ -159,9 +75,143 @@ main {
     }
   }
 }
+
+// popularProduct
+.popularProduct {
+  &-inner {
+    margin-top: size(112);
+    &-header {
+      color: $neutral-900;
+      font-family: $DMfont;
+      font-size: size(40);
+      font-style: normal;
+      line-height: size(48);
+      text-align: center;
+      margin-bottom: size(40);
+    }
+    &-category {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      &-btn {
+        padding: 4px 12px;
+        @include radius(4);
+        background: $primary-color-50;
+        color: $neutral-900;
+        font-family: $primaryfont;
+        font-size: size(16);
+        font-weight: 500;
+        line-height: size(24);
+        border: none;
+        transition: all 0.35s ease-in-out;
+        &:hover {
+          background: $primary-color-base;
+          color: $white;
+        }
+      }
+    }
+    &-cart {
+      cursor: pointer;
+      &-image {
+        position: relative;
+        .product-img {
+          width: size(302);
+          height: size(302);
+        }
+        .new {
+          position: absolute;
+          top: size(12);
+          left: size(12);
+          @include radius(4);
+          background: #3b82f6;
+          padding: size(2) size(6);
+          color: $white;
+          font-family: $primaryfont;
+          font-size: size(14);
+          font-weight: 500;
+          line-height: size(20);
+        }
+        .discount {
+          position: absolute;
+          top: size(12);
+          left: size(12);
+          @include radius(4);
+          background: #ef4444;
+          padding: size(2) size(6);
+          color: $white;
+          font-family: $primaryfont;
+          font-size: size(14);
+          font-weight: 500;
+          line-height: size(20);
+        }
+        .popularProduct-inner-cart-inner {
+          display: none;
+          .popularProduct-inner-cart-hover {
+            display: flex;
+            flex-direction: column;
+            gap: size(12);
+            .cart-hover-bg {
+              display: flex;
+              width: size(48);
+              height: size(48);
+              justify-content: center;
+              align-items: center;
+              @include radius(30);
+              background: $white;
+              box-shadow: 0px 10px 14px -4px rgba(15, 28, 51, 0.08),
+                0px 2px 8px -4px rgba(15, 28, 51, 0.05);
+            }
+          }
+        }
+        &:hover .popularProduct-inner-cart-inner {
+          display: block;
+          position: absolute;
+          top: size(12);
+          right: size(12);
+        }
+      }
+      &-content {
+        padding: 16px;
+        .title {
+          color: $neutral-900;
+          font-family: $DMfont;
+          font-size: size(16);
+          line-height: size(24);
+          text-align: center;
+        }
+        .innerPrice {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+          .price {
+            color: $neutral-900;
+            font-family: $DMfont;
+            font-size: size(24);
+            line-height: size(32);
+          }
+          .discountPrice {
+            color: $neutral-500;
+            font-family: $DMfont;
+            text-decoration: line-through;
+            font-size: size(20);
+            line-height: size(28);
+            text-decoration-line: strikethrough;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
 // Plant for Your Home
 .plantHome {
-  padding: 140px 0;
+  padding-top: size(112);
   &-inner {
     &-content {
       display: flex;
@@ -224,6 +274,69 @@ main {
     }
   }
 }
+.peopleSays-inner {
+  background: $primary-color-50;
+  padding: size(48) 0 0 0;
+  margin-top: size(112);
+  .title {
+    color: $neutral-900;
+    font-family: $DMfont;
+    font-size: size(40);
+    line-height: size(48);
+    text-align: center;
+  }
+  .details {
+    color: $neutral-600;
+    text-align: center;
+    font-family: $primaryfont;
+    font-size: size(18);
+    line-height: size(28);
+    margin-top: size(20);
+  }
+  .peopleSays-cart {
+    @include radius(4);
+    background: $white;
+    padding: size(24);
+    .star {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      img {
+        width: 15px;
+        height: 15px;
+      }
+    }
+    .details {
+      color: $neutral-600;
+      font-family: $primaryfont;
+      font-size: size(14);
+      line-height: size(20);
+      text-align: start;
+      margin-top: 0;
+      padding: size(16) 0;
+    }
+    .people-details {
+      display: flex;
+      align-items: center;
+      gap: size(8);
+      .people-img {
+        width: size(40);
+        height: size(40);
+        @include radius(50);
+        background: lightgray 50% / cover no-repeat;
+      }
+      .people-name {
+        color: $neutral-800;
+        font-family: $primaryfont;
+        font-size: size(16);
+        font-weight: 500;
+        line-height: size(24);
+      }
+    }
+  }
+}
+// What People Says Start
+
 // Read our recent Blogs section
 .inner-recentBlock {
   background: $neutral-50;

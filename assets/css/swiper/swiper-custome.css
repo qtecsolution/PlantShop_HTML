@@ -1,0 +1,25 @@
+.swiper {
+  padding-bottom: 50px !important;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: -3px !important;
+}
+
+/* .swiper-pagination-bullet {
+  background: #91C2B9 !important;
+} */
+.swiper-pagination-bullet {
+  display: inline-block !;
+  width: 25px !important;
+  height: 25px !important;
+  background: #91c2b9 !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 25px !important;
+  height: 25px !important;
+  background: #00715d !important;
+}

@@ -10,7 +10,8 @@
   <!-- font awesome cdn -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <!-- Link Swiper's CSS -->
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+  <link rel="stylesheet" href="./assets/css/swiper/swiper.css">
+  <link rel="stylesheet" href="./assets/css/swiper/swiper-custome.css">
   <!-- BOOTSTRAP-CSS -->
   <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
   <!-- CUSTOM-CSS -->
@@ -115,81 +116,389 @@
   </header>
   <!-- HEADER-SECTION-END -->
 
-
-
   <!-- MAIN SECTION START -->
   <main>
+    <!-- Hero section start -->
+    <section>
+      <div class="hero-inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="hero-inner-content">
+                <h1 class="title">
+                  Green up Your Space into nature
+                </h1>
+                <p class="details">
+                  Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum.
+                </p>
+                <div class="">
+                  <button class="primary-button">
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <figure>
+                <img src="./assets/images/home/Banner Image.png" alt="Banner" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero section end -->
+
     <!-- Category section start -->
-     <section>
+    <section>
       <div class="category-inner">
         <div class="container">
           <div class="row g-3 g-lg-5">
             <div class="col-6 col-sm-4 col-md-3 col-lg-2">
               <div class="category-inner-cart">
                 <figure>
-                  <img class="category-img" src="./assets/images/home/Succulents.png" alt="img"/>
+                  <img class="category-img" src="./assets/images/home/Succulents.png" alt="img" />
                 </figure>
                 <p class="category-name">
                   Succulents
-                </>
+                  </>
               </div>
             </div>
             <div class="col-6 col-sm-4 col-md-3 col-lg-2">
               <div class="category-inner-cart">
                 <figure>
-                  <img class="category-img" src="./assets/images/home/Carnivorous.png" alt="img"/>
+                  <img class="category-img" src="./assets/images/home/Carnivorous.png" alt="img" />
                 </figure>
                 <p class="category-name">
                   Carnivorous
-                </>
+                  </>
               </div>
             </div>
             <div class="col-6 col-sm-4 col-md-3 col-lg-2">
               <div class="category-inner-cart">
                 <figure>
-                  <img class="category-img" src="./assets/images/home/Flowering Plants.png" alt="img"/>
+                  <img class="category-img" src="./assets/images/home/Flowering Plants.png" alt="img" />
                 </figure>
                 <p class="category-name">
                   Flowering Plants
-                </>
+                  </>
               </div>
             </div>
             <div class="col-6 col-sm-4 col-md-3 col-lg-2">
               <div class="category-inner-cart">
                 <figure>
-                  <img class="category-img" src="./assets/images/home/Foliage Plants.png" alt="img"/>
+                  <img class="category-img" src="./assets/images/home/Foliage Plants.png" alt="img" />
                 </figure>
                 <p class="category-name">
                   Foliage Plants
-                </>
+                  </>
               </div>
             </div>
             <div class="col-6 col-sm-4 col-md-3 col-lg-2">
               <div class="category-inner-cart">
                 <figure>
-                  <img class="category-img" src="./assets/images/home/Bonsai Plants.png" alt="img"/>
+                  <img class="category-img" src="./assets/images/home/Bonsai Plants.png" alt="img" />
                 </figure>
                 <p class="category-name">
                   Bonsai Plants
-                </>
+                  </>
               </div>
             </div>
             <div class="col-6 col-sm-4 col-md-3 col-lg-2">
               <div class="category-inner-cart">
                 <figure>
-                  <img class="category-img" src="./assets/images/home/Herbs Plants.png" alt="img"/>
+                  <img class="category-img" src="./assets/images/home/Herbs Plants.png" alt="img" />
                 </figure>
                 <p class="category-name">
                   Herbs Plants
-                </>
+                  </>
               </div>
             </div>
           </div>
         </div>
       </div>
-     </section>
+    </section>
     <!-- Category section end -->
-     
+
+    <!-- Most Popular Product Start -->
+    <section>
+      <div class="popularProduct">
+        <div class="container">
+          <div class="popularProduct-inner">
+            <h1 class="popularProduct-inner-header">
+              Most Popular Product
+            </h1>
+            <div class="popularProduct-inner-category">
+              <button class="popularProduct-inner-category-btn">
+                Weeping Fig
+              </button>
+              <button class="popularProduct-inner-category-btn">
+                Rubber Plant
+              </button>
+              <button class="popularProduct-inner-category-btn">
+                Parlor Palm
+              </button>
+              <button class="popularProduct-inner-category-btn">
+                Dragon Tree
+              </button><button class="popularProduct-inner-category-btn">
+                Lemon Lime
+              </button>
+            </div>
+            <div class="row mt-5 g-4">
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="popularProduct-inner-cart">
+                  <figure class="popularProduct-inner-cart-image">
+                    <img class="product-img" src="./assets/images/home/popularProduct-bg-1.png" alt="popularProduct" />
+                    <div class="new">New</div>
+
+                    <div class="popularProduct-inner-cart-inner">
+                      <div class="popularProduct-inner-cart-hover">
+                        <figure class="cart-hover-bg">
+                          <img src="./assets/images/home/shopping.png" alt="shopping" />
+                        </figure>
+                        <figure class="cart-hover-bg">
+                          <img src="./assets/images/home/favourite.png" alt="favourite" />
+                        </figure>
+                        <figure class="cart-hover-bg">
+                          <img src="./assets/images/home/View.png" alt="View" />
+                        </figure>
+                      </div>
+                    </div>
+                  </figure>
+
+                  <div class="popularProduct-inner-cart-content">
+                    <div class="title line-clamp1">Petlas MultiAction PT565</div>
+                    <div class="innerPrice">
+                      <p class="price">$20</p>
+                      <p class="discountPrice">$25</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="popularProduct-inner-cart">
+                  <figure class="popularProduct-inner-cart-image">
+                    <img class="product-img" src="./assets/images/home/popularProduct-bg-2.png" alt="popularProduct" />
+                    <div class="new">New</div>
+
+                    <div class="popularProduct-inner-cart-inner">
+                      <div class="popularProduct-inner-cart-hover">
+                        <figure class="cart-hover-bg">
+                          <img src="./assets/images/home/shopping.png" alt="shopping" />
+                        </figure>
+                        <figure class="cart-hover-bg">
+                          <img src="./assets/images/home/favourite.png" alt="favourite" />
+                        </figure>
+                        <figure class="cart-hover-bg">
+                          <img src="./assets/images/home/View.png" alt="View" />
+                        </figure>
+                      </div>
+                    </div>
+                  </figure>
+
+                  <div class="popularProduct-inner-cart-content">
+                    <div class="title line-clamp1">Petlas MultiAction PT565</div>
+                    <div class="innerPrice">
+                      <p class="price">$20</p>
+                      <p class="discountPrice">$25</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="popularProduct-inner-cart">
+                  <figure class="popularProduct-inner-cart-image">
+                    <img class="product-img" src="./assets/images/home/popularProduct-bg-3.png" alt="popularProduct" />
+                    <div class="new">New</div>
+
+                    <div class="popularProduct-inner-cart-inner">
+                      <div class="popularProduct-inner-cart-hover">
+                        <figure class="cart-hover-bg">
+                          <img src="./assets/images/home/shopping.png" alt="shopping" />
+                        </figure>
+                        <figure class="cart-hover-bg">
+                          <img src="./assets/images/home/favourite.png" alt="favourite" />
+                        </figure>
+                        <figure class="cart-hover-bg">
+                          <img src="./assets/images/home/View.png" alt="View" />
+                        </figure>
+                      </div>
+                    </div>
+                  </figure>
+
+                  <div class="popularProduct-inner-cart-content">
+                    <div class="title line-clamp1">Petlas MultiAction PT565</div>
+                    <div class="innerPrice">
+                      <p class="price">$20</p>
+                      <p class="discountPrice">$25</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="popularProduct-inner-cart">
+                  <figure class="popularProduct-inner-cart-image">
+                    <img class="product-img" src="./assets/images/home/popularProduct-bg-4.png" alt="popularProduct" />
+                    <div class="new">New</div>
+
+                    <div class="popularProduct-inner-cart-inner">
+                      <div class="popularProduct-inner-cart-hover">
+                        <figure class="cart-hover-bg">
+                          <img src="./assets/images/home/shopping.png" alt="shopping" />
+                        </figure>
+                        <figure class="cart-hover-bg">
+                          <img src="./assets/images/home/favourite.png" alt="favourite" />
+                        </figure>
+                        <figure class="cart-hover-bg">
+                          <img src="./assets/images/home/View.png" alt="View" />
+                        </figure>
+                      </div>
+                    </div>
+                  </figure>
+
+                  <div class="popularProduct-inner-cart-content">
+                    <div class="title line-clamp1">Petlas MultiAction PT565</div>
+                    <div class="innerPrice">
+                      <p class="price">$20</p>
+                      <p class="discountPrice">$25</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="popularProduct-inner-cart">
+                  <figure class="popularProduct-inner-cart-image">
+                    <img class="product-img" src="./assets/images/home/popularProduct-bg-5.png" alt="popularProduct" />
+                    <div class="new">New</div>
+
+                    <div class="popularProduct-inner-cart-inner">
+                      <div class="popularProduct-inner-cart-hover">
+                        <figure class="cart-hover-bg">
+                          <img src="./assets/images/home/shopping.png" alt="shopping" />
+                        </figure>
+                        <figure class="cart-hover-bg">
+                          <img src="./assets/images/home/favourite.png" alt="favourite" />
+                        </figure>
+                        <figure class="cart-hover-bg">
+                          <img src="./assets/images/home/View.png" alt="View" />
+                        </figure>
+                      </div>
+                    </div>
+                  </figure>
+
+                  <div class="popularProduct-inner-cart-content">
+                    <div class="title line-clamp1">Petlas MultiAction PT565</div>
+                    <div class="innerPrice">
+                      <p class="price">$20</p>
+                      <p class="discountPrice">$25</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="popularProduct-inner-cart">
+                  <figure class="popularProduct-inner-cart-image">
+                    <img class="product-img" src="./assets/images/home/popularProduct-bg-6.png" alt="popularProduct" />
+                    <div class="new">New</div>
+
+                    <div class="popularProduct-inner-cart-inner">
+                      <div class="popularProduct-inner-cart-hover">
+                        <figure class="cart-hover-bg">
+                          <img src="./assets/images/home/shopping.png" alt="shopping" />
+                        </figure>
+                        <figure class="cart-hover-bg">
+                          <img src="./assets/images/home/favourite.png" alt="favourite" />
+                        </figure>
+                        <figure class="cart-hover-bg">
+                          <img src="./assets/images/home/View.png" alt="View" />
+                        </figure>
+                      </div>
+                    </div>
+                  </figure>
+
+                  <div class="popularProduct-inner-cart-content">
+                    <div class="title line-clamp1">Petlas MultiAction PT565</div>
+                    <div class="innerPrice">
+                      <p class="price">$20</p>
+                      <p class="discountPrice">$25</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="popularProduct-inner-cart">
+                  <figure class="popularProduct-inner-cart-image">
+                    <img class="product-img" src="./assets/images/home/popularProduct-bg-7.png" alt="popularProduct" />
+                    <div class="discount">-50%</div>
+
+                    <div class="popularProduct-inner-cart-inner">
+                      <div class="popularProduct-inner-cart-hover">
+                        <figure class="cart-hover-bg">
+                          <img src="./assets/images/home/shopping.png" alt="shopping" />
+                        </figure>
+                        <figure class="cart-hover-bg">
+                          <img src="./assets/images/home/favourite.png" alt="favourite" />
+                        </figure>
+                        <figure class="cart-hover-bg">
+                          <img src="./assets/images/home/View.png" alt="View" />
+                        </figure>
+                      </div>
+                    </div>
+                  </figure>
+
+                  <div class="popularProduct-inner-cart-content">
+                    <div class="title line-clamp1">Petlas MultiAction PT565</div>
+                    <div class="innerPrice">
+                      <p class="price">$20</p>
+                      <p class="discountPrice">$25</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="popularProduct-inner-cart">
+                  <figure class="popularProduct-inner-cart-image">
+                    <img class="product-img" src="./assets/images/home/popularProduct-bg-8.png" alt="popularProduct" />
+                    <div class="new">New</div>
+
+                    <div class="popularProduct-inner-cart-inner">
+                      <div class="popularProduct-inner-cart-hover">
+                        <figure class="cart-hover-bg">
+                          <img src="./assets/images/home/shopping.png" alt="shopping" />
+                        </figure>
+                        <figure class="cart-hover-bg">
+                          <img src="./assets/images/home/favourite.png" alt="favourite" />
+                        </figure>
+                        <figure class="cart-hover-bg">
+                          <img src="./assets/images/home/View.png" alt="View" />
+                        </figure>
+                      </div>
+                    </div>
+                  </figure>
+
+                  <div class="popularProduct-inner-cart-content">
+                    <div class="title line-clamp1">Petlas MultiAction PT565</div>
+                    <div class="innerPrice">
+                      <p class="price">$20</p>
+                      <p class="discountPrice">$25</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Most Popular Product End -->
+
     <!-- Plant for Office START-->
     <section>
       <div class="plantHome">
@@ -207,7 +516,8 @@
                     Plant for Office
                   </h1>
                   <p class="plantHome-inner-content-details">
-                    Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per.
+                    Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
+                    aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per.
                   </p>
                   <div>
                     <button class="primary-button">Shop Now</button>
@@ -252,6 +562,132 @@
       </div>
     </section>
     <!-- Plant for Your Home END-->
+    <!-- What People Says Start -->
+    <section>
+      <div class="peopleSays-inner">
+        <div class="container">
+          <h1 class="title">
+            What People Says
+          </h1>
+          <p class="details">
+            Gorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet
+          </p>
+          <div class="py-5">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="peopleSays-cart">
+                    <div class="star">
+                      <img src="./assets/images/home/star.svg" alt="star" />
+                      <img src="./assets/images/home/star.svg" alt="star" />
+                      <img src="./assets/images/home/star.svg" alt="star" />
+                      <img src="./assets/images/home/star.svg" alt="star" />
+                      <img src="./assets/images/home/star.svg" alt="star" />
+                    </div>
+                    <p class="details">
+                      Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
+                      aliquet dolor sit amet, consectetur
+                      </>
+                    <div class="people-details">
+                      <img class="people-img" src="./assets/images/home/people1.png" alt="people img" />
+                      <p class="people-name">
+                        Mizanur Rahman
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="peopleSays-cart">
+                    <div class="star">
+                      <img src="./assets/images/home/star.svg" alt="star" />
+                      <img src="./assets/images/home/star.svg" alt="star" />
+                      <img src="./assets/images/home/star.svg" alt="star" />
+                      <img src="./assets/images/home/star.svg" alt="star" />
+                      <img src="./assets/images/home/star.svg" alt="star" />
+                    </div>
+                    <p class="details">
+                      Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
+                      aliquet dolor sit amet, consectetur
+                      </>
+                    <div class="people-details">
+                      <img class="people-img" src="./assets/images/home/people2.png" alt="people img" />
+                      <p class="people-name">
+                        Mizanur Rahman
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="peopleSays-cart">
+                    <div class="star">
+                      <img src="./assets/images/home/star.svg" alt="star" />
+                      <img src="./assets/images/home/star.svg" alt="star" />
+                      <img src="./assets/images/home/star.svg" alt="star" />
+                      <img src="./assets/images/home/star.svg" alt="star" />
+                      <img src="./assets/images/home/star.svg" alt="star" />
+                    </div>
+                    <p class="details">
+                      Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
+                      aliquet dolor sit amet, consectetur
+                      </>
+                    <div class="people-details">
+                      <img class="people-img" src="./assets/images/home/people3.png" alt="people img" />
+                      <p class="people-name">
+                        Mizanur Rahman
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="peopleSays-cart">
+                    <div class="star">
+                      <img src="./assets/images/home/star.svg" alt="star" />
+                      <img src="./assets/images/home/star.svg" alt="star" />
+                      <img src="./assets/images/home/star.svg" alt="star" />
+                      <img src="./assets/images/home/star.svg" alt="star" />
+                      <img src="./assets/images/home/star.svg" alt="star" />
+                    </div>
+                    <p class="details">
+                      Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
+                      aliquet dolor sit amet, consectetur
+                      </>
+                    <div class="people-details">
+                      <img class="people-img" src="./assets/images/home/people1.png" alt="people img" />
+                      <p class="people-name">
+                        Mizanur Rahman
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="peopleSays-cart">
+                    <div class="star">
+                      <img src="./assets/images/home/star.svg" alt="star" />
+                      <img src="./assets/images/home/star.svg" alt="star" />
+                      <img src="./assets/images/home/star.svg" alt="star" />
+                      <img src="./assets/images/home/star.svg" alt="star" />
+                      <img src="./assets/images/home/star.svg" alt="star" />
+                    </div>
+                    <p class="details">
+                      Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
+                      aliquet dolor sit amet, consectetur
+                      </>
+                    <div class="people-details">
+                      <img class="people-img" src="./assets/images/home/people1.png" alt="people img" />
+                      <p class="people-name">
+                        Mizanur Rahman
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- What People Says end -->
 
     <!-- Read our recent Blogs START-->
     <section>
@@ -464,9 +900,9 @@
       </div>
     </section>
     <!-- Support section End -->
+
   </main>
   <!-- MAIN SECTION END -->
-
 
   <!-- FOOTER-SECTION-START -->
   <footer>
@@ -599,10 +1035,13 @@
     </div>
   </footer>
   <!-- FOOTER-SECTION-END -->
+
+
   <!-- BOOTSTRAP-JS -->
   <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
   <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./assets/js/swiper/swiper.js"></script>
+  <script src="./assets/js/swiper/swiper-custome.js"></script>
   <!-- main js -->
   <script src="./assets/js/main.js"></script>
 </body>

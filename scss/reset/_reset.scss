@@ -110,7 +110,7 @@ video {
 }
 
 body {
-  @include setBgColor($white, $neutral-950);
+  // @include setBgColor($white, $neutral-950);
   font-family: $primaryfont;
   font-size: size(16);
   font-style: normal;
