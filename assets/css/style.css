@@ -1747,6 +1747,99 @@ main {
   line-height: 24px; /* 150% */
 }
 
+.hero2 {
+  margin-top: 5rem;
+}
+.hero2-inner-content-indoor {
+  color: #00715d;
+  font-family: "Onest", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1.875rem;
+  background: #e6f1ef;
+  display: inline-block;
+}
+.hero2-inner-content-title {
+  color: #004035;
+  font-family: "DM Serif Display", serif;
+  font-size: 40px;
+}
+@media screen and (min-width: 75rem) {
+  .hero2-inner-content-title {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+}
+.hero2-inner-content-details {
+  color: #475569;
+  font-family: "Onest", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin: 0.875rem 0 1.25rem 0;
+}
+@media screen and (min-width: 75rem) {
+  .hero2-inner-content-details {
+    margin: 1.5rem 0 2.5rem 0;
+  }
+}
+.hero2-inner-right {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+  gap: 8.125rem;
+}
+.hero2-inner-right-content {
+  list-style: none;
+  border-right: 2px solid #C2DDD8;
+}
+.hero2-inner-right-content li {
+  text-align: end;
+  color: #64748B;
+  font-family: "Onest", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+  padding: 0 0.75rem 0 0;
+  cursor: pointer;
+  transition: all 0.35s;
+}
+.hero2-inner-right-content li:hover {
+  color: #00715d;
+  border-right: 2px solid #00715d;
+}
+.hero2-inner-right-social .social-item {
+  border-radius: 0.5rem;
+  border: 1px solid #004035;
+  width: 2.5rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.35s ease-in-out;
+}
+.hero2-inner-right-social .social-item .social-item-svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.hero2-inner-right-social .social-item .social-item-path {
+  transition: all 0.35s ease-in-out;
+}
+.hero2-inner-right-social .social-item:hover {
+  background: #004035;
+}
+.hero2-inner-right-social .social-item:hover .social-item-path {
+  fill: hsl(0, 0%, 100%);
+}
+
+.plant-category {
+  margin-top: 7rem;
+}
 .plant-category-cart {
   -moz-border-top-left-radius: 0rem;
   border-top-left-radius: 0rem;
@@ -1816,6 +1909,7 @@ main {
 }
 
 .inner-support2 {
+  margin-top: 5rem;
   background: #00715d;
   padding: 63px 0;
 }
@@ -1854,6 +1948,9 @@ main {
   line-height: 24px; /* 150% */
 }
 
+.popularProduct2 {
+  margin-top: 5rem;
+}
 .popularProduct2-inner-header {
   color: #0f172a;
   font-family: "DM Serif Display", serif;
@@ -1980,6 +2077,9 @@ main {
   -webkit-line-clamp: 1;
 }
 
+.product-variant {
+  margin-top: 7rem;
+}
 .product-variant .content {
   -moz-border-top-left-radius: 0.5rem;
   border-top-left-radius: 0.5rem;

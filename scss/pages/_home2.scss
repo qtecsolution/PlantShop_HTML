@@ -2,8 +2,101 @@
 @use "../partials" as *;
 
 // Hero section start
+.hero2 {
+  margin-top: size(80);
+  &-inner {
+    &-content {
+      &-indoor {
+        color: $primary-color-base;
+        font-family: $primaryfont;
+        font-size: size(16);
+        font-weight: 500;
+        line-height: size(24);
+        padding: size(4) size(12);
+        @include radius(30);
+        background: $primary-color-50;
+        display: inline-block;
+      }
+      &-title {
+        color: $primary-color-800;
+        font-family: $DMfont;
+        font-size: 40px;
+
+        @include breakpoint(desktop1200) {
+          font-size: size(64);
+          line-height: size(80);
+        }
+      }
+      &-details {
+        color: $neutral-600;
+        font-family: $primaryfont;
+        font-size: size(18);
+        line-height: size(28);
+        margin: size(14) 0 size(20) 0;
+        @include breakpoint(desktop1200) {
+          margin: size(24) 0 size(40) 0;
+        }
+      }
+    }
+    &-right {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      justify-content: end;
+      gap: size(130);
+      &-content {
+        list-style: none;
+        border-right: 2px solid $primary-color-100;
+        li {
+          text-align: end;
+          color: $neutral-500;
+          font-family: $primaryfont;
+          font-size: size(18);
+          font-weight: 500;
+          line-height: size(28);
+          padding: 0 size(12) 0 0;
+          cursor: pointer;
+          transition: all 0.35s;
+          &:hover {
+            color: $primary-color-base;
+            border-right: 2px solid #00715d;
+          }
+        }
+      }
+      &-social {
+        .social-item {
+          @include radius(8);
+          border: 1px solid $primary-color-800;
+          width: size(40);
+          height: size(40);
+          flex-shrink: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          transition: all 0.35s ease-in-out;
+          .social-item-svg {
+            width: size(20);
+            height: size(20);
+          }
+          .social-item-path { 
+            transition: all 0.35s ease-in-out;
+          }
+          &:hover {
+            background: $primary-color-800;
+          }
+          &:hover .social-item-path {
+            fill: $white;
+          }
+        }
+      }
+    }
+  }
+}
 // Plant category start
 .plant-category {
+  margin-top: size(112);
   &-cart {
     @include single-radius(top, left, 0);
     @include single-radius(bottom, right, 0);
@@ -71,6 +164,7 @@
 }
 // support section
 .inner-support2 {
+  margin-top: size(80);
   background: #00715d;
   padding: 63px 0;
   // margin-bottom: 80px;
@@ -112,6 +206,7 @@
 
 // popularProduct
 .popularProduct2 {
+  margin-top: size(80);
   &-inner {
     // margin-top: size(112);
     &-header {
@@ -244,6 +339,7 @@
 }
 // product variant
 .product-variant {
+  margin-top: size(112);
   .content {
     @include single-radius(top, left, 8);
     @include single-radius(bottom, right, 8);
