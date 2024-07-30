@@ -12,8 +12,24 @@
   line-height: 24px;
   border: none;
   transition: all 0.35s ease-in-out;
-  @include hover{
+  @include hover {
     background: $primary-color-700;
+  }
+}
+.blog-button {
+  padding: size(12) size(20);
+  @include radius(4);
+  background: $white;
+  border: 1px solid $primary-color-base;
+  color: $primary-color-base;
+  font-family: $primaryfont;
+  font-size: size(16);
+  font-weight: 500;
+  line-height: 24px;
+  transition: all 0.35s ease-in-out;
+  @include hover {
+    background: $primary-color-base;
+    color: $white;
   }
 }
 
