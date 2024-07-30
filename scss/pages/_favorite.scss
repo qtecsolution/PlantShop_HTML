@@ -1,0 +1,105 @@
+@use "../global" as *;
+@use "../partials" as *;
+
+// favorite-section
+.favorite-section {
+  margin-bottom: size(80);
+  &-inner {
+    .breadcrumb-nav {
+      .breadcrumbOl {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        align-items: center;
+        gap: size(5);
+        .breadcrumbItem {
+          display: flex;
+          align-items: center;
+          gap: size(5);
+          color: $neutral-600;
+          font-family: $primaryfont;
+          font-size: size(16);
+          font-weight: 500;
+          line-height: size(24);
+          a {
+            color: $neutral-400;
+            font-family: $primaryfont;
+            font-size: size(16);
+            font-weight: 500;
+            line-height: size(24);
+          }
+          span {
+            color: $neutral-400;
+          }
+        }
+      }
+    }
+
+    .my-favorite {
+      color: $neutral-900;
+      font-family: $DMfont;
+      font-size: size(32);
+      line-height: size(32);
+      padding-bottom: size(20);
+      border-bottom: 1px solid $neutral-200;
+    }
+
+    .favorite-details {
+      padding: size(16) 0;
+      border-bottom: 1px solid $neutral-200;
+      .favorite-image-title {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .favorite-image {
+          height: size(80);
+          width: size(80);
+          img {
+            width: 100%;
+            @include radius(4);
+          }
+        }
+        .favorite-title {
+          color: $neutral-900;
+          font-family: $primaryfont;
+          font-size: size(16);
+          font-style: normal;
+          font-weight: 500;
+          line-height: size(24);
+        }
+      }
+      .price-section {
+        display: flex;
+        flex-direction: column;
+        gap: size(8);
+        .price {
+          color: $neutral-900;
+          font-family: $primaryfont;
+          font-size: size(16);
+          font-style: normal;
+          font-weight: 500;
+          line-height: size(24);
+        }
+        .discount-price {
+          color: $neutral-400;
+          font-family: $primaryfont;
+          font-size: size(16);
+          font-weight: 400;
+          line-height: size(24);
+          text-decoration: line-through;
+        }
+      }
+
+      .delete-btn-inner {
+        display: flex;
+        justify-content: end;
+        .delate-btn {
+          @include radius(4);
+          border: 1px solid $neutral-300;
+          padding: size(8);
+          background: transparent;
+        }
+      }
+    }
+  }
+}

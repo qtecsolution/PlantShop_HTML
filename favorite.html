@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plantify-favorite </title>
+  <!-- FAVICON-ICON -->
+  <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/svg+xml" />
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="./assets/css/swiper/swiper.css">
+  <link rel="stylesheet" href="./assets/css/swiper/swiper-custome.css">
+  <!-- BOOTSTRAP-CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
+  <!-- CUSTOM-CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+</head>
+
+<body>
+  <!-- HEADER-SECTION-START -->
+  <header class="header2">
+    <div class="header-inner-nav">
+      <div class="container">
+        <nav class="header-nav d-flex justify-content-between">
+          <div class="header-logo ">
+            <a href="./index.html">
+              <img src="./assets/images/logo/Logo.png" alt="logo" />
+            </a>
+          </div>
+
+          <ul class="desktop-menu d-none d-lg-flex">
+            <li class="desktop-menu-list">
+              <a class="desktop-menu-link menu-active" href="#">Home</a>
+            </li>
+            <li class="desktop-menu-list">
+              <a class="desktop-menu-link" href="#">Shop</a>
+            </li>
+            <li class="desktop-menu-list">
+              <a class="desktop-menu-link" href="#">Blog</a>
+            </li>
+            <li class="desktop-menu-list">
+              <a class="desktop-menu-link" href="#">Pages</a>
+            </li>
+          </ul>
+
+          <ul class="right-nav d-flex">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                <path d="M16.5 17L21 21.5" stroke="#475569" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M19 10.5C19 5.52944 14.9706 1.5 10 1.5C5.02944 1.5 1 5.52944 1 10.5C1 15.4706 5.02944 19.5 10 19.5C14.9706 19.5 19 15.4706 19 10.5Z"
+                  stroke="#475569" stroke-width="1.5" stroke-linejoin="round" />
+              </svg>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                <path
+                  d="M3.87289 17.5194L2.66933 10.3398C2.48735 9.25428 2.39637 8.71152 2.68773 8.35576C2.9791 8 3.51461 8 4.58564 8H19.4144C20.4854 8 21.0209 8 21.3123 8.35576C21.6036 8.71152 21.5126 9.25428 21.3307 10.3398L20.1271 17.5194C19.7282 19.8991 19.5287 21.0889 18.7143 21.7945C17.9 22.5 16.726 22.5 14.3782 22.5H9.62182C7.27396 22.5 6.10003 22.5 5.28565 21.7945C4.47127 21.0889 4.27181 19.8991 3.87289 17.5194Z"
+                  stroke="#475569" stroke-width="1.5" />
+                <path d="M17.5 8C17.5 4.96243 15.0376 2.5 12 2.5C8.96243 2.5 6.5 4.96243 6.5 8" stroke="#475569"
+                  stroke-width="1.5" />
+              </svg>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23" fill="none">
+                <path
+                  d="M4.57757 14.9816C3.1628 15.824 -0.546635 17.5441 1.71266 19.6966C2.81631 20.748 4.04549 21.5 5.59087 21.5H14.4091C15.9545 21.5 17.1837 20.748 18.2873 19.6966C20.5466 17.5441 16.8372 15.824 15.4224 14.9816C12.1048 13.0061 7.89519 13.0061 4.57757 14.9816Z"
+                  stroke="#475569" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M14.5 6C14.5 8.48528 12.4853 10.5 10 10.5C7.51472 10.5 5.5 8.48528 5.5 6C5.5 3.51472 7.51472 1.5 10 1.5C12.4853 1.5 14.5 3.51472 14.5 6Z"
+                  stroke="#475569" stroke-width="1.5" />
+              </svg>
+            </li>
+          </ul>
+
+          <button class="d-block d-lg-none" data-bs-toggle="offcanvas" href="#mobile-menu-offcanvas" role="button"
+            aria-controls="mobile-menu-offcanvas">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M3 7H21" stroke="#000" stroke-width="1.5" stroke-linecap="round" />
+              <path d="M3 12H21" stroke="#000" stroke-width="1.5" stroke-linecap="round" />
+              <path d="M3 17H21" stroke="#000" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </button>
+
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="mobile-menu-offcanvas"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="mobile-menu">
+                <li class="mobile-menu-list">
+                  <a class="mobile-menu-link menu-active" href="#">Home</a>
+                </li>
+                <li class="mobile-menu-list">
+                  <a class="mobile-menu-link" href="#">Shop</a>
+                </li>
+                <li class="mobile-menu-list">
+                  <a class="mobile-menu-link" href="#">Blog</a>
+                </li>
+                <li class="mobile-menu-list">
+                  <a class="mobile-menu-link" href="#">Pages</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- HEADER-SECTION-END -->
+
+  <!-- MAIN SECTION START -->
+  <main>
+    <section>
+      <div class="favorite-section">
+        <div class="container">
+          <div class="favorite-section-inner">
+            <nav class="breadcrumb-nav my-4">
+              <ol class="breadcrumbOl">
+                <li class="breadcrumbItem">
+                  <a href="./index.html">Home</a>
+                  <span> > </span>
+                </li>
+                <li class="breadcrumbItem">My Favorite</li>
+              </ol>
+            </nav>
+
+            <!-- My favorite -->
+
+            <div class="row g-5">
+              <div class="col-lg-10">
+                <h1 class="my-favorite">
+                  My Favorite
+                </h1>
+                <div class="favorite-details">
+                  <div class="row">
+                    <div class="col-5 align-self-center">
+                      <div class="favorite-image-title">
+                        <figure class="favorite-image">
+                          <img src="./assets/images/cart/cart1.png" alt="favorite" />
+                        </figure>
+                        <h3 class="favorite-title line-clamp1">
+                          Plant for Home lorem
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="col-2 align-self-center">
+                      <div class="price-section">
+                        <p class="price">25 $</p>
+                        <p class="discount-price">35 $</p>
+                      </div>
+                    </div>
+                    <div class="col-3 align-self-center">
+                      <button class="primary-button">
+                        Add to Cart
+                      </button>
+                    </div>
+                    <div class="col-2 align-self-center">
+                      <div class="delete-btn-inner">
+                        <button class="delate-btn">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none">
+                            <path
+                              d="M19.5 5.5L18.8803 15.5251C18.7219 18.0864 18.6428 19.3671 18.0008 20.2879C17.6833 20.7431 17.2747 21.1273 16.8007 21.416C15.8421 22 14.559 22 11.9927 22C9.42312 22 8.1383 22 7.17905 21.4149C6.7048 21.1257 6.296 20.7408 5.97868 20.2848C5.33688 19.3626 5.25945 18.0801 5.10461 15.5152L4.5 5.5"
+                              stroke="#64748B" stroke-width="1.5" stroke-linecap="round" />
+                            <path
+                              d="M3 5.5H21M16.0557 5.5L15.3731 4.09173C14.9196 3.15626 14.6928 2.68852 14.3017 2.39681C14.215 2.3321 14.1231 2.27454 14.027 2.2247C13.5939 2 13.0741 2 12.0345 2C10.9688 2 10.436 2 9.99568 2.23412C9.8981 2.28601 9.80498 2.3459 9.71729 2.41317C9.32164 2.7167 9.10063 3.20155 8.65861 4.17126L8.05292 5.5"
+                              stroke="#64748B" stroke-width="1.5" stroke-linecap="round" />
+                            <path d="M9.5 16.5V10.5" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" />
+                            <path d="M14.5 16.5V10.5" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="favorite-details">
+                  <div class="row">
+                    <div class="col-5 align-self-center">
+                      <div class="favorite-image-title">
+                        <figure class="favorite-image">
+                          <img src="./assets/images/cart/cart2.png" alt="favorite" />
+                        </figure>
+                        <h3 class="favorite-title line-clamp1">
+                          Plant for Home lorem
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="col-2 align-self-center">
+                      <div class="price-section">
+                        <p class="price">25 $</p>
+                        <p class="discount-price">35 $</p>
+                      </div>
+                    </div>
+                    <div class="col-3 align-self-center">
+                      <button class="primary-button">
+                        Add to Cart
+                      </button>
+                    </div>
+                    <div class="col-2 align-self-center">
+                      <div class="delete-btn-inner">
+                        <button class="delate-btn">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none">
+                            <path
+                              d="M19.5 5.5L18.8803 15.5251C18.7219 18.0864 18.6428 19.3671 18.0008 20.2879C17.6833 20.7431 17.2747 21.1273 16.8007 21.416C15.8421 22 14.559 22 11.9927 22C9.42312 22 8.1383 22 7.17905 21.4149C6.7048 21.1257 6.296 20.7408 5.97868 20.2848C5.33688 19.3626 5.25945 18.0801 5.10461 15.5152L4.5 5.5"
+                              stroke="#64748B" stroke-width="1.5" stroke-linecap="round" />
+                            <path
+                              d="M3 5.5H21M16.0557 5.5L15.3731 4.09173C14.9196 3.15626 14.6928 2.68852 14.3017 2.39681C14.215 2.3321 14.1231 2.27454 14.027 2.2247C13.5939 2 13.0741 2 12.0345 2C10.9688 2 10.436 2 9.99568 2.23412C9.8981 2.28601 9.80498 2.3459 9.71729 2.41317C9.32164 2.7167 9.10063 3.20155 8.65861 4.17126L8.05292 5.5"
+                              stroke="#64748B" stroke-width="1.5" stroke-linecap="round" />
+                            <path d="M9.5 16.5V10.5" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" />
+                            <path d="M14.5 16.5V10.5" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="favorite-details">
+                  <div class="row">
+                    <div class="col-5 align-self-center">
+                      <div class="favorite-image-title">
+                        <figure class="favorite-image">
+                          <img src="./assets/images/cart/cart3.png" alt="favorite" />
+                        </figure>
+                        <h3 class="favorite-title line-clamp1">
+                          Plant for Home lorem
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="col-2 align-self-center">
+                      <div class="price-section">
+                        <p class="price">25 $</p>
+                        <p class="discount-price">35 $</p>
+                      </div>
+                    </div>
+                    <div class="col-3 align-self-center">
+                      <button class="primary-button">
+                        Add to Cart
+                      </button>
+                    </div>
+                    <div class="col-2 align-self-center">
+                      <div class="delete-btn-inner">
+                        <button class="delate-btn">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none">
+                            <path
+                              d="M19.5 5.5L18.8803 15.5251C18.7219 18.0864 18.6428 19.3671 18.0008 20.2879C17.6833 20.7431 17.2747 21.1273 16.8007 21.416C15.8421 22 14.559 22 11.9927 22C9.42312 22 8.1383 22 7.17905 21.4149C6.7048 21.1257 6.296 20.7408 5.97868 20.2848C5.33688 19.3626 5.25945 18.0801 5.10461 15.5152L4.5 5.5"
+                              stroke="#64748B" stroke-width="1.5" stroke-linecap="round" />
+                            <path
+                              d="M3 5.5H21M16.0557 5.5L15.3731 4.09173C14.9196 3.15626 14.6928 2.68852 14.3017 2.39681C14.215 2.3321 14.1231 2.27454 14.027 2.2247C13.5939 2 13.0741 2 12.0345 2C10.9688 2 10.436 2 9.99568 2.23412C9.8981 2.28601 9.80498 2.3459 9.71729 2.41317C9.32164 2.7167 9.10063 3.20155 8.65861 4.17126L8.05292 5.5"
+                              stroke="#64748B" stroke-width="1.5" stroke-linecap="round" />
+                            <path d="M9.5 16.5V10.5" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" />
+                            <path d="M14.5 16.5V10.5" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- MAIN SECTION END -->
+
+  <!-- FOOTER-SECTION-START -->
+  <footer>
+    <div class="footer-inner">
+      <div class="container">
+        <div class="row g-3 g-xl-5">
+          <div class="col-md-6 col-lg-4">
+            <div class="footer-left-content">
+              <img src="./assets/images/footer/Logo.png" alt="logo" />
+              <p>
+                Gorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet adipiscing elit dolor sit amet.
+                Gorem ipsum dolor sit amet, consectetur
+              </p>
+            </div>
+          </div>
+          <div class="footer-middle-content col-md-6 col-lg-2">
+            <h3>
+              Quick Links
+            </h3>
+            <ul>
+              <li class="footer-list">
+                <a class="footer-link" href="#">
+                  About Us
+                </a>
+              </li>
+              <li class="footer-list">
+                <a class="footer-link" href="#">
+                  Shop
+                </a>
+              </li>
+              <li class="footer-list">
+                <a class="footer-link" href="#">
+                  My favorite
+                </a>
+              </li>
+              <li class="footer-list">
+                <a class="footer-link" href="#">
+                  Blog
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-middle-content col-md-6 col-lg-2">
+            <h3>
+              Support
+            </h3>
+            <ul>
+              <li class="footer-list">
+                <a class="footer-link" href="#">
+                  Track your Order
+                </a>
+              </li>
+              <li class="footer-list">
+                <a class="footer-link" href="#">
+                  Help & FAQ
+                </a>
+              </li>
+              <li class="footer-list">
+                <a class="footer-link" href="#">
+                  Privacy Policy
+                </a>
+              </li>
+              <li class="footer-list">
+                <a class="footer-link" href="#">
+                  Return & Refund
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-right-content col-md-6 col-lg-4">
+            <h3>
+              Follow us on
+            </h3>
+            <div class="social-icn">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <path
+                    d="M29.3337 16.0335C29.3337 8.65505 23.3603 2.66675 16.0003 2.66675C8.64033 2.66675 2.66699 8.65505 2.66699 16.0335C2.66699 22.503 7.25366 27.8898 13.3337 29.1329V20.0435H10.667V16.0335H13.3337V12.6918C13.3337 10.112 15.427 8.01345 18.0003 8.01345H21.3337V12.0235H18.667C17.9337 12.0235 17.3337 12.625 17.3337 13.3601V16.0335H21.3337V20.0435H17.3337V29.3334C24.067 28.6651 29.3337 22.9708 29.3337 16.0335Z"
+                    fill="white" />
+                </svg>
+              </a>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <path
+                    d="M18.1471 16.3239C18.1391 16.7463 18.0058 17.1568 17.7642 17.5033C17.5226 17.8499 17.1835 18.1169 16.79 18.2705C16.3965 18.4241 15.9662 18.4575 15.5537 18.3663C15.1412 18.2751 14.7651 18.0635 14.473 17.7583C14.1809 17.4531 13.986 17.068 13.913 16.6519C13.84 16.2358 13.8921 15.8074 14.0629 15.421C14.2336 15.0346 14.5153 14.7076 14.8721 14.4814C15.2289 14.2552 15.6448 14.1401 16.0671 14.1506C16.6283 14.1713 17.1594 14.4099 17.5477 14.8156C17.936 15.2213 18.151 15.7623 18.1471 16.3239Z"
+                    fill="white" />
+                  <path
+                    d="M19.684 9.64404H12.4506C11.7349 9.64404 11.0485 9.92837 10.5424 10.4345C10.0363 10.9406 9.75195 11.627 9.75195 12.3427V19.7387C9.75195 20.0931 9.82176 20.444 9.95738 20.7714C10.093 21.0989 10.2918 21.3964 10.5424 21.647C10.793 21.8975 11.0905 22.0963 11.4179 22.232C11.7453 22.3676 12.0962 22.4374 12.4506 22.4374H19.684C20.0383 22.4374 20.3893 22.3676 20.7167 22.232C21.0441 22.0963 21.3416 21.8975 21.5922 21.647C21.8428 21.3964 22.0416 21.0989 22.1772 20.7714C22.3128 20.444 22.3826 20.0931 22.3826 19.7387V12.356C22.384 12.0006 22.3153 11.6484 22.1803 11.3196C22.0454 10.9908 21.8468 10.6919 21.5961 10.44C21.3454 10.188 21.0475 9.98803 20.7194 9.85145C20.3912 9.71487 20.0394 9.64439 19.684 9.64404ZM16.0666 19.9414C15.3506 19.9575 14.6459 19.76 14.0427 19.3739C13.4394 18.9879 12.9648 18.4308 12.6795 17.7739C12.3942 17.1169 12.3112 16.3898 12.4409 15.6855C12.5706 14.9811 12.9073 14.3313 13.408 13.8191C13.9086 13.3069 14.5505 12.9555 15.2517 12.8097C15.953 12.664 16.6817 12.7304 17.345 13.0006C18.0083 13.2709 18.5761 13.7326 18.9758 14.3269C19.3755 14.9212 19.5891 15.6211 19.5893 16.3374C19.5947 16.8054 19.5079 17.2698 19.3338 17.7042C19.1597 18.1387 18.9018 18.5345 18.5746 18.8692C18.2475 19.2039 17.8576 19.4708 17.4273 19.6548C16.997 19.8388 16.5346 19.9362 16.0666 19.9414ZM19.9813 12.7347C19.8933 12.7347 19.8062 12.7172 19.7251 12.6831C19.644 12.6491 19.5705 12.5991 19.5089 12.5363C19.4473 12.4735 19.3989 12.399 19.3664 12.3172C19.334 12.2354 19.3182 12.148 19.32 12.06C19.32 11.8811 19.391 11.7095 19.5176 11.583C19.6441 11.4565 19.8157 11.3854 19.9946 11.3854C20.1736 11.3854 20.3452 11.4565 20.4717 11.583C20.5982 11.7095 20.6693 11.8811 20.6693 12.06C20.6719 12.1553 20.654 12.25 20.6166 12.3376C20.5793 12.4253 20.5234 12.5039 20.4529 12.5679C20.3824 12.632 20.2988 12.6801 20.208 12.7089C20.1172 12.7376 20.0212 12.7465 19.9266 12.7347H19.9813Z"
+                    fill="white" />
+                  <path
+                    d="M16.0662 2.66667C12.53 2.64899 9.13155 4.03679 6.61857 6.52477C4.10558 9.01276 2.68386 12.3971 2.66618 15.9333C2.6485 19.4696 4.0363 22.868 6.52428 25.381C9.01227 27.8939 12.3966 29.3157 15.9328 29.3333C17.6838 29.3421 19.4193 29.0059 21.0404 28.3439C22.6614 27.6819 24.1362 26.7072 25.3805 25.4752C26.6248 24.2433 27.6142 22.7784 28.2924 21.164C28.9706 19.5497 29.3241 17.8176 29.3329 16.0667C29.3416 14.3157 29.0054 12.5802 28.3434 10.9592C27.6814 9.33813 26.7067 7.86336 25.4747 6.61905C24.2428 5.37475 22.7779 4.38527 21.1636 3.70712C19.5492 3.02897 17.8171 2.67543 16.0662 2.66667ZM24.1635 19.6027C24.1672 20.2008 24.0522 20.7938 23.825 21.3472C23.5979 21.9006 23.2631 22.4034 22.8402 22.8264C22.4173 23.2495 21.9146 23.5843 21.3613 23.8117C20.808 24.039 20.215 24.1542 19.6168 24.1507H12.5182C11.9201 24.154 11.3273 24.0387 10.7741 23.8114C10.2209 23.5842 9.71822 23.2494 9.29525 22.8266C8.87227 22.4037 8.53737 21.9012 8.30992 21.348C8.08247 20.7949 7.967 20.2021 7.97018 19.604V12.504C7.96647 11.9058 8.08152 11.3129 8.30868 10.7595C8.53584 10.2061 8.87058 9.70332 9.2935 9.28027C9.71643 8.85723 10.2191 8.52234 10.7724 8.29501C11.3257 8.06769 11.9187 7.95246 12.5168 7.956H19.6168C20.2149 7.95247 20.8077 8.06765 21.361 8.29489C21.9142 8.52213 22.4168 8.8569 22.8397 9.2798C23.2626 9.70271 23.5974 10.2053 23.8246 10.7586C24.0519 11.3118 24.1671 11.9046 24.1635 12.5027V19.6027Z"
+                    fill="white" />
+                </svg>
+              </a>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <path
+                    d="M16.0003 2.66675C23.3718 2.66675 29.3337 8.62865 29.3337 16.0001C29.3337 23.3715 23.3718 29.3334 16.0003 29.3334C8.6289 29.3334 2.66699 23.3715 2.66699 16.0001C2.66699 8.62865 8.6289 2.66675 16.0003 2.66675ZM13.5622 23.0287C19.467 23.0287 22.7051 18.1334 22.7051 13.8858V13.4667C23.3337 13.0096 23.886 12.4382 24.3051 11.7906C23.7337 12.0382 23.1051 12.2096 22.4575 12.3048C23.1241 11.9048 23.6384 11.2763 23.867 10.5334C23.2384 10.8953 22.5527 11.162 21.8289 11.3144C21.2384 10.6858 20.4003 10.3048 19.486 10.3048C17.7146 10.3048 16.267 11.7525 16.267 13.5239C16.267 13.7715 16.286 14.0191 16.3622 14.2477C13.6956 14.1144 11.3146 12.8382 9.73366 10.8953C9.46699 11.3715 9.29556 11.9239 9.29556 12.5144C9.29556 13.6191 9.86699 14.6096 10.7241 15.181C10.1908 15.181 9.69556 15.0287 9.27652 14.781V14.8191C9.27652 16.381 10.3813 17.6763 11.8479 17.981C11.5813 18.0572 11.2956 18.0953 11.0098 18.0953C10.8003 18.0953 10.6098 18.0763 10.4003 18.0382C10.8003 19.3144 12.0003 20.2477 13.3908 20.2667C12.286 21.1239 10.8956 21.6382 9.3908 21.6382C9.12414 21.6382 8.87652 21.6382 8.6289 21.6001C10.0384 22.5144 11.7337 23.0477 13.5432 23.0477"
+                    fill="white" />
+                </svg>
+              </a>
+            </div>
+            <p>
+              Subscribe our Newsletter
+            </p>
+            <form class="newsletter-form">
+              <div class="newsletter-input">
+                <div class="newsletter-icon mb-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16" fill="none">
+                    <path d="M5.83398 5.0835L8.28566 6.53302C9.715 7.3781 10.2863 7.3781 11.7156 6.53302L14.1673 5.0835"
+                      stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M1.68013 9.22977C1.73461 11.7844 1.76185 13.0617 2.70446 14.0079C3.64706 14.9541 4.95894 14.987 7.58268 15.0529C9.19975 15.0936 10.8009 15.0936 12.418 15.0529C15.0417 14.987 16.3536 14.9541 17.2962 14.0079C18.2388 13.0617 18.266 11.7844 18.3205 9.22977C18.338 8.40836 18.338 7.59181 18.3205 6.77041C18.266 4.2158 18.2388 2.93849 17.2962 1.9923C16.3536 1.04611 15.0417 1.01315 12.418 0.947222C10.8009 0.906592 9.19975 0.90659 7.58268 0.947217C4.95893 1.01313 3.64706 1.04609 2.70445 1.99229C1.76184 2.93848 1.73461 4.21579 1.68013 6.7704C1.66261 7.5918 1.66261 8.40836 1.68013 9.22977Z"
+                      stroke="#64748B" stroke-width="1.5" stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <input type="text" name="" id="" placeholder="example@gmail.com" />
+              </div>
+              <button class="footer-btn">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="coppy-rights">
+      <p>@plantify 2024.All rights reserves</p>
+    </div>
+  </footer>
+  <!-- FOOTER-SECTION-END -->
+
+  <!-- BOOTSTRAP-JS -->
+  <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="./assets/js/swiper/swiper.js"></script>
+  <script src="./assets/js/swiper/swiper-custome.js"></script>
+  <!-- main js -->
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

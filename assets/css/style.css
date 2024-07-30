@@ -3132,6 +3132,267 @@ main {
   line-height: 1.75rem;
 }
 
+.favorite-section {
+  margin-bottom: 5rem;
+}
+.favorite-section-inner .breadcrumb-nav .breadcrumbOl {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.3125rem;
+}
+.favorite-section-inner .breadcrumb-nav .breadcrumbOl .breadcrumbItem {
+  display: flex;
+  align-items: center;
+  gap: 0.3125rem;
+  color: #475569;
+  font-family: "Onest", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.favorite-section-inner .breadcrumb-nav .breadcrumbOl .breadcrumbItem a {
+  color: #94a3b8;
+  font-family: "Onest", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.favorite-section-inner .breadcrumb-nav .breadcrumbOl .breadcrumbItem span {
+  color: #94a3b8;
+}
+.favorite-section-inner .my-favorite {
+  color: #0f172a;
+  font-family: "DM Serif Display", serif;
+  font-size: 2rem;
+  line-height: 2rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+.favorite-section-inner .favorite-details {
+  padding: 1rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+.favorite-section-inner .favorite-details .favorite-image-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.favorite-section-inner .favorite-details .favorite-image-title .favorite-image {
+  height: 5rem;
+  width: 5rem;
+}
+.favorite-section-inner .favorite-details .favorite-image-title .favorite-image img {
+  width: 100%;
+  border-radius: 0.25rem;
+}
+.favorite-section-inner .favorite-details .favorite-image-title .favorite-title {
+  color: #0f172a;
+  font-family: "Onest", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.favorite-section-inner .favorite-details .price-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.favorite-section-inner .favorite-details .price-section .price {
+  color: #0f172a;
+  font-family: "Onest", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.favorite-section-inner .favorite-details .price-section .discount-price {
+  color: #94a3b8;
+  font-family: "Onest", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-decoration: line-through;
+}
+.favorite-section-inner .favorite-details .delete-btn-inner {
+  display: flex;
+  justify-content: end;
+}
+.favorite-section-inner .favorite-details .delete-btn-inner .delate-btn {
+  border-radius: 0.25rem;
+  border: 1px solid #cbd5e1;
+  padding: 0.5rem;
+  background: transparent;
+}
+
+.order-successfully-section-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  margin: 5rem 0;
+}
+.order-successfully-section-inner .title {
+  color: #00715d;
+  font-family: "DM Serif Display", serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+}
+.order-successfully-section-inner .error-title {
+  color: #475569;
+  font-family: "DM Serif Display", serif;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.order-successfully-section-inner .details {
+  color: #475569;
+  font-family: "Onest", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.contact-us-section-inner {
+  margin: 5rem 0;
+}
+.contact-us-section-inner .breadcrumb-nav .breadcrumbOl {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.3125rem;
+}
+.contact-us-section-inner .breadcrumb-nav .breadcrumbOl .breadcrumbItem {
+  display: flex;
+  align-items: center;
+  gap: 0.3125rem;
+  color: #475569;
+  font-family: "Onest", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.contact-us-section-inner .breadcrumb-nav .breadcrumbOl .breadcrumbItem a {
+  color: #94a3b8;
+  font-family: "Onest", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.contact-us-section-inner .breadcrumb-nav .breadcrumbOl .breadcrumbItem span {
+  color: #94a3b8;
+}
+.contact-us-section-inner .contact-us-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contact-us-section-inner .contact-us-left .title {
+  color: #0f172a;
+  font-family: "DM Serif Display", serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+}
+.contact-us-section-inner .contact-us-left .details {
+  color: #475569;
+  font-family: "Onest", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.contact-us-section-inner .contact-us-left .location,
+.contact-us-section-inner .contact-us-left .phone-number {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.contact-us-section-inner .contact-us-left .location-img,
+.contact-us-section-inner .contact-us-left .phone-number-img {
+  width: 4rem;
+  height: 4rem;
+  flex-shrink: 0;
+  background: #e6f1ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 62499.9375rem;
+}
+.contact-us-section-inner .contact-us-left .location-img svg,
+.contact-us-section-inner .contact-us-left .phone-number-img svg {
+  width: 2rem;
+  height: 2rem;
+}
+.contact-us-section-inner .contact-us-left .location-details {
+  max-width: 16.875rem;
+  color: #0f172a;
+  font-family: "Onest", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.75rem;
+}
+.contact-us-section-inner .contact-us-left .phone-number .details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.contact-us-section-inner .contact-us-left .phone-number .details .text {
+  color: #475569;
+  font-family: "Onest", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.contact-us-section-inner .contact-us-left .phone-number .details .number {
+  color: #0f172a;
+  font-family: "Onest", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.75rem;
+}
+.contact-us-section-inner .contact-us-right {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.contact-us-section-inner .contact-us-right .input-field {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+.contact-us-section-inner .contact-us-right .input-field label {
+  color: #0f172a;
+  font-family: "Onest", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.contact-us-section-inner .contact-us-right .input-field-inner {
+  display: flex;
+  border-radius: 0.25rem;
+  border: 1px solid #cbd5e1;
+  background: hsl(0, 0%, 100%);
+  padding: 1rem;
+  align-items: center;
+  align-self: stretch;
+  gap: 0.5rem;
+}
+.contact-us-section-inner .contact-us-right .input-field-inner-img svg {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+.contact-us-section-inner .contact-us-right .input-field-inner input {
+  width: 100%;
+}
+
 html {
   box-sizing: border-box;
   font-size: 100%;

@@ -1,0 +1,148 @@
+@use "../global" as *;
+@use "../partials" as *;
+
+// contact-us-section
+.contact-us-section {
+  &-inner {
+    margin: size(80) 0;
+    .breadcrumb-nav {
+      .breadcrumbOl {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        align-items: center;
+        gap: size(5);
+        .breadcrumbItem {
+          display: flex;
+          align-items: center;
+          gap: size(5);
+          color: $neutral-600;
+          font-family: $primaryfont;
+          font-size: size(16);
+          font-weight: 500;
+          line-height: size(24);
+          a {
+            color: $neutral-400;
+            font-family: $primaryfont;
+            font-size: size(16);
+            font-weight: 500;
+            line-height: size(24);
+          }
+          span {
+            color: $neutral-400;
+          }
+        }
+      }
+    }
+    .contact-us-left {
+      display: flex;
+      flex-direction: column;
+      gap: size(32);
+      .title {
+        color: $neutral-900;
+        font-family: $DMfont;
+        font-size: size(24);
+        font-style: normal;
+        font-weight: 400;
+        line-height: size(32);
+      }
+      .details {
+        color: $neutral-600;
+        font-family: $primaryfont;
+        font-size: size(16);
+        font-style: normal;
+        font-weight: 400;
+        line-height: size(24);
+      }
+      .location,
+      .phone-number {
+        display: flex;
+        align-items: center;
+        gap: size(20);
+        &-img {
+          width: size(64);
+          height: size(64);
+          flex-shrink: 0;
+          background: #e6f1ef;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @include radius(999999);
+          svg {
+            width: size(32);
+            height: size(32);
+          }
+        }
+      }
+      .location {
+        &-details {
+          max-width: size(270);
+          color: $neutral-900;
+          font-family: $primaryfont;
+          font-size: size(18);
+          font-style: normal;
+          font-weight: 500;
+          line-height: size(28);
+        }
+      }
+      .phone-number {
+        .details {
+          display: flex;
+          flex-direction: column;
+          gap: size(4);
+          .text {
+            color: $neutral-600;
+            font-family: $primaryfont;
+            font-size: size(16);
+            line-height: size(24);
+          }
+          .number {
+            color: $neutral-900;
+            font-family: $primaryfont;
+            font-size: size(18);
+            font-style: normal;
+            font-weight: 500;
+            line-height: size(28);
+          }
+        }
+      }
+    }
+    .contact-us-right {
+      display: flex;
+      gap: size(16);
+      flex-direction: column;
+      .input-field {
+        display: flex;
+        gap: size(8);
+        flex-direction: column;
+        label {
+          color: $neutral-900;
+          font-family: $primaryfont;
+          font-size: size(16);
+          font-style: normal;
+          font-weight: 500;
+          line-height: size(24);
+        }
+        &-inner {
+          display: flex;
+          @include radius(4);
+          border: 1px solid $neutral-300;
+          background: $white;
+          padding: size(16);
+          align-items: center;
+          align-self: stretch;
+          gap: size(8);
+          &-img {
+            svg {
+              height: size(20);
+              width: size(20);
+            }
+          }
+          input {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@use "../global" as *;
+@use "../partials" as *;
+
+.order-successfully-section {
+  &-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: size(20);
+    margin: size(80) 0;
+    .title {
+      color: $primary-color-base;
+      font-family: $DMfont;
+      font-size: size(24);
+      line-height: size(32);
+      text-align: center;
+    }
+    .error-title {
+      color: $neutral-600;
+      font-family: $DMfont;
+      font-size: size(40);
+      text-align: center;
+    }
+    .details {
+      color: $neutral-600;
+      font-family: $primaryfont;
+      font-size: size(16);
+      line-height: size(24);
+      text-align: center;
+    }
+  }
+}
