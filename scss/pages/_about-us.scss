@@ -1,0 +1,130 @@
+@use "../global" as *;
+@use "../partials" as *;
+//
+.breadcrumb-nav {
+  .breadcrumbOl {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    gap: size(5);
+    .breadcrumbItem {
+      display: flex;
+      align-items: center;
+      gap: size(5);
+      color: $neutral-600;
+      font-family: $primaryfont;
+      font-size: size(16);
+      font-weight: 500;
+      line-height: size(24);
+      a {
+        color: $neutral-400;
+        font-family: $primaryfont;
+        font-size: size(16);
+        font-weight: 500;
+        line-height: size(24);
+      }
+      span {
+        color: $neutral-400;
+      }
+    }
+  }
+}
+
+.story-of-ceo {
+  margin: size(32) 0 0 0;
+  &-inner {
+    .left-image {
+      width: 100%;
+      .story-of-ceo-inner-imge {
+        width: 100%;
+        @include radius(8);
+      }
+    }
+    &-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      gap: size(20);
+      &-ceo {
+        color: $primary-color-base;
+        font-family: $primaryfont;
+        font-size: size(18);
+        font-style: normal;
+        font-weight: 600;
+        line-height: size(28);
+      }
+      &-title {
+        color: $neutral-900;
+        font-family: $DMfont;
+        font-size: size(40);
+        font-weight: 400;
+        line-height: size(48);
+      }
+      &-details {
+        color: $neutral-500;
+        font-family: $primaryfont;
+        font-size: size(16);
+        font-weight: 400;
+        line-height: size(24);
+      }
+      &-satisfaction {
+        display: flex;
+        gap: size(8);
+        align-items: center;
+        .text {
+          color: $neutral-900;
+          font-family: $primaryfont;
+          font-size: size(18);
+          font-style: normal;
+          font-weight: 500;
+          line-height: size(28);
+        }
+      }
+    }
+  }
+}
+
+.story-of-ceo-top{
+  margin: size(112) 0 0 0;
+}
+
+// plant-collection
+.plant-collection {
+  background: $primary-color-700;
+  margin: size(112) 0 size(112) 0;
+  padding: size(80) 0;
+  &-inner {
+    .content-cart {
+      display: flex;
+      flex-direction: column;
+      gap: size(8);
+      padding: size(32) size(24);
+      background: $white;
+      @include radius(8);
+      .number {
+        color: $neutral-900;
+        text-align: center;
+        font-family: $DMfont;
+        font-size: size(32);
+        font-style: normal;
+        font-weight: 400;
+        line-height: size(40);
+      }
+      .title {
+        color: $neutral-600;
+        text-align: center;
+        font-family: $primaryfont;
+        font-size: size(18);
+        font-style: normal;
+        font-weight: 500;
+        line-height: size(28);
+      }
+    }
+  }
+}
+
+.peopleSays-bottom{
+  margin: 0 0 size(112) 0;
+}

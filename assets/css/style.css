@@ -3393,6 +3393,127 @@ main {
   width: 100%;
 }
 
+.breadcrumb-nav .breadcrumbOl {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.3125rem;
+}
+.breadcrumb-nav .breadcrumbOl .breadcrumbItem {
+  display: flex;
+  align-items: center;
+  gap: 0.3125rem;
+  color: #475569;
+  font-family: "Onest", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.breadcrumb-nav .breadcrumbOl .breadcrumbItem a {
+  color: #94a3b8;
+  font-family: "Onest", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.breadcrumb-nav .breadcrumbOl .breadcrumbItem span {
+  color: #94a3b8;
+}
+
+.story-of-ceo {
+  margin: 2rem 0 0 0;
+}
+.story-of-ceo-inner .left-image {
+  width: 100%;
+}
+.story-of-ceo-inner .left-image .story-of-ceo-inner-imge {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.story-of-ceo-inner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  gap: 1.25rem;
+}
+.story-of-ceo-inner-content-ceo {
+  color: #00715d;
+  font-family: "Onest", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.75rem;
+}
+.story-of-ceo-inner-content-title {
+  color: #0f172a;
+  font-family: "DM Serif Display", serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+.story-of-ceo-inner-content-details {
+  color: #64748B;
+  font-family: "Onest", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.story-of-ceo-inner-content-satisfaction {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.story-of-ceo-inner-content-satisfaction .text {
+  color: #0f172a;
+  font-family: "Onest", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.75rem;
+}
+
+.story-of-ceo-top {
+  margin: 7rem 0 0 0;
+}
+
+.plant-collection {
+  background: #005042;
+  margin: 7rem 0 7rem 0;
+  padding: 5rem 0;
+}
+.plant-collection-inner .content-cart {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 2rem 1.5rem;
+  background: hsl(0, 0%, 100%);
+  border-radius: 0.5rem;
+}
+.plant-collection-inner .content-cart .number {
+  color: #0f172a;
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+.plant-collection-inner .content-cart .title {
+  color: #475569;
+  text-align: center;
+  font-family: "Onest", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.75rem;
+}
+
+.peopleSays-bottom {
+  margin: 0 0 7rem 0;
+}
+
 html {
   box-sizing: border-box;
   font-size: 100%;
