@@ -3,27 +3,54 @@
 
 // hero3
 .hero3 {
+  margin-top: size(60);
   &-inner {
     &-content {
       &-title {
-        color: var(--Foundation-primary-800, #004035);
-
-        /* Desktop/Display/md/regular */
-        font-family: "DM Serif Display";
-        font-size: 64px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 80px; /* 125% */
+        color: $primary-color-800;
+        font-family: $DMfont;
+        font-size: 40px;
+        
+        @include breakpoint(desktop1200){
+          font-size: size(64);
+          line-height: size(80);
+        }
       }
       &-details {
-        color: var(--Foundation-Neutral-600, var(--Foundation-Neutral-600, #475569));
-
-        /* Body/xl/regular */
-        font-family: Onest;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 28px; /* 155.556% */
+        color: $neutral-600;
+        font-family: $primaryfont;
+        font-size: size(18);
+        line-height: size(28);
+        margin: size(14) 0 size(20) 0;
+        @include breakpoint(desktop1200){
+          margin: size(24) 0 size(40) 0;
+        }
+      }
+      &-cart {
+        display: flex;
+        padding: size(16);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: size(8);
+        @include radius(8);
+        background: $primary-color-50;
+        .number {
+          color: $primary-color-800;
+          text-align: center;
+          font-family: $DMfont;
+          font-size: size(28);
+          line-height: size(36);
+        }
+        .title {
+          color: $neutral-900;
+          font-family: $primaryfont;
+          font-size: size(16);
+          line-height: size(24);
+        }
+      }
+      &-imge {
+        width: 100%;
       }
     }
   }
@@ -31,6 +58,7 @@
 
 // we-offer
 .we-offer {
+  margin-top: size(112);
   &-header {
     margin-bottom: size(56);
     .text {
@@ -106,6 +134,7 @@
 
 // Our Best Selling start
 .best-selling {
+  margin-top: size(112);
   &-header {
     display: flex;
     justify-content: space-between;
@@ -237,6 +266,7 @@
 
 // popularProduct
 .popularProduct3 {
+  margin-top: size(112);
   &-inner {
     // margin-top: size(112);
     &-header {
@@ -367,184 +397,10 @@
     }
   }
 }
-// product variant
-.product-variant {
-  .content {
-    @include single-radius(top, left, 8);
-    @include single-radius(bottom, right, 8);
-    @include single-radius(top, right, 80);
-    @include single-radius(bottom, left, 8);
-    background: #f1e7db;
-    display: flex;
-    flex-direction: column;
-    gap: size(40);
-    padding: size(51) 0 0 size(32);
-    .content-left {
-      .variant {
-        color: $neutral-600;
-        font-family: $primaryfont;
-        font-size: size(16);
-        line-height: size(24);
-      }
-      .title {
-        color: $neutral-900;
-        font-family: $DMfont;
-        font-size: size(32);
-        line-height: size(40);
-      }
-    }
-    .content-left-img {
-      display: flex;
-      justify-content: center;
-      img {
-        width: size(270);
-        height: size(270);
-        flex-shrink: 0;
-      }
-    }
-  }
-  .content1 {
-    display: flex;
-    flex-direction: column;
-    gap: size(24);
-    .content-top {
-      @include single-radius(top, left, 32);
-      @include single-radius(bottom, right, 32);
-      @include single-radius(top, right, 8);
-      @include single-radius(bottom, left, 8);
-      background-color: #e5eefa;
-      padding: 48px 16px 13px 24px;
-      display: flex;
-      justify-content: space-between;
-      .content-left {
-        .variant {
-          color: $neutral-600;
-          font-family: $primaryfont;
-          font-size: size(16);
-          line-height: size(24);
-        }
-        .title {
-          color: $neutral-900;
-          font-family: $DMfont;
-          font-size: size(32);
-          line-height: size(40);
-        }
-      }
-      .content-right {
-        margin-top: 13px;
-        img {
-          width: size(127);
-          height: size(127);
-          flex-shrink: 0;
-        }
-      }
-    }
-    .content-bottom {
-      @include single-radius(top, left, 8);
-      @include single-radius(bottom, right, 8);
-      @include single-radius(top, right, 32);
-      @include single-radius(bottom, left, 32);
-      background-color: #f7e4e0;
-      padding: 48px 16px 13px 24px;
-      display: flex;
-      justify-content: space-between;
-      .content-left {
-        .variant {
-          color: $neutral-600;
-          font-family: $primaryfont;
-          font-size: size(16);
-          line-height: size(24);
-        }
-        .title {
-          color: $neutral-900;
-          font-family: $DMfont;
-          font-size: size(32);
-          line-height: size(40);
-        }
-      }
-      .content-right {
-        margin-top: 13px;
-        img {
-          width: size(127);
-          height: size(127);
-          flex-shrink: 0;
-        }
-      }
-    }
-  }
-  .content2 {
-    display: flex;
-    flex-direction: column;
-    gap: size(24);
-    .content-top {
-      @include single-radius(top, left, 8);
-      @include single-radius(bottom, right, 8);
-      @include single-radius(top, right, 32);
-      @include single-radius(bottom, left, 32);
-      background-color: #dedbf1;
-      padding: 48px 16px 13px 24px;
-      display: flex;
-      justify-content: space-between;
-      .content-left {
-        .variant {
-          color: $neutral-600;
-          font-family: $primaryfont;
-          font-size: size(16);
-          line-height: size(24);
-        }
-        .title {
-          color: $neutral-900;
-          font-family: $DMfont;
-          font-size: size(32);
-          line-height: size(40);
-        }
-      }
-      .content-right {
-        margin-top: 13px;
-        img {
-          width: size(127);
-          height: size(127);
-          flex-shrink: 0;
-        }
-      }
-    }
-    .content-bottom {
-      @include single-radius(top, left, 32);
-      @include single-radius(bottom, right, 32);
-      @include single-radius(top, right, 8);
-      @include single-radius(bottom, left, 8);
-      background-color: #dbe9f1;
-      padding: 48px 16px 13px 24px;
-      display: flex;
-      justify-content: space-between;
-      .content-left {
-        .variant {
-          color: $neutral-600;
-          font-family: $primaryfont;
-          font-size: size(16);
-          line-height: size(24);
-        }
-        .title {
-          color: $neutral-900;
-          font-family: $DMfont;
-          font-size: size(32);
-          line-height: size(40);
-        }
-      }
-      .content-right {
-        margin-top: 13px;
-        img {
-          width: size(127);
-          height: size(127);
-          flex-shrink: 0;
-        }
-      }
-    }
-  }
-}
 
 // support section
 .inner-support3 {
+  margin-top: size(112);
   background: #00715d;
   padding: 63px 0;
   // margin-bottom: 80px;
