@@ -1,0 +1,191 @@
+@use "../global" as *;
+@use "../partials" as *;
+
+// cart-section
+.cart-section {
+  margin-bottom: size(80);
+  &-inner {
+    .breadcrumb-nav {
+      .breadcrumbOl {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        align-items: center;
+        gap: size(5);
+        .breadcrumbItem {
+          display: flex;
+          align-items: center;
+          gap: size(5);
+          color: $neutral-600;
+          font-family: $primaryfont;
+          font-size: size(16);
+          font-weight: 500;
+          line-height: size(24);
+          a {
+            color: $neutral-400;
+            font-family: $primaryfont;
+            font-size: size(16);
+            font-weight: 500;
+            line-height: size(24);
+          }
+          span {
+            color: $neutral-400;
+          }
+        }
+      }
+    }
+
+    .my-cart {
+      color: $neutral-900;
+      font-family: $DMfont;
+      font-size: size(32);
+      line-height: size(32);
+      padding-bottom: size(20);
+      border-bottom: 1px solid $neutral-200;
+    }
+
+    .cart-details {
+      padding: size(16) 0;
+      border-bottom: 1px solid $neutral-200;
+      .cart-image-title {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .cart-image {
+          height: size(80);
+          width: size(80);
+          img {
+            width: 100%;
+            @include radius(4);
+          }
+        }
+        .cart-title {
+          color: $neutral-900;
+          font-family: $primaryfont;
+          font-size: size(16);
+          font-style: normal;
+          font-weight: 500;
+          line-height: size(24);
+        }
+      }
+      .price-section {
+        display: flex;
+        flex-direction: column;
+        gap: size(8);
+        .price {
+          color: $neutral-900;
+          font-family: $primaryfont;
+          font-size: size(16);
+          font-style: normal;
+          font-weight: 500;
+          line-height: size(24);
+        }
+        .discount-price {
+          color: $neutral-400;
+          font-family: $primaryfont;
+          font-size: size(16);
+          font-weight: 400;
+          line-height: size(24);
+          text-decoration: line-through;
+        }
+      }
+
+      .product-quantity {
+        background: $white;
+        display: flex;
+        width: size(80);
+        padding: size(6) size(12);
+        justify-content: space-between;
+        align-items: center;
+        @include radius(4);
+        @include breakpoint(mobile576) {
+          width: size(150);
+        }
+        .decrement-btn,
+        .increment-btn {
+          border: none;
+          background: transparent;
+        }
+        .quantity {
+          color: $neutral-900;
+          font-family: $primaryfont;
+          font-size: size(16);
+          font-style: normal;
+          font-weight: 500;
+          line-height: size(24);
+        }
+      }
+      .delete-btn-inner {
+        display: flex;
+        justify-content: end;
+        .delate-btn {
+          @include radius(4);
+          border: 1px solid $neutral-300;
+          padding: size(8);
+          background: transparent;
+        }
+      }
+    }
+
+    .order-summery {
+      @include radius(8);
+      border: 1px solid $neutral-300;
+      padding: size(24) size(20);
+      display: flex;
+      flex-direction: column;
+      gap: size(20);
+      .title {
+        color: $neutral-900;
+        font-family: $DMfont;
+        font-size: size(20);
+        line-height: size(28);
+        text-align: center;
+        padding-bottom: size(20);
+        border-bottom: 1px solid $neutral-300;
+      }
+      &-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // padding-bottom: size(20);
+        .order-title {
+          color: $neutral-600;
+          font-family: $primaryfont;
+          font-size: size(16);
+          font-weight: 500;
+          line-height: size(24);
+        }
+        .price {
+          color: $neutral-900;
+          font-family: $primaryfont;
+          font-size: size(16);
+          font-weight: 500;
+          line-height: size(24);
+        }
+        .coupon-input {
+          max-width: size(155);
+          padding: size(6) size(9);
+          background: $white;
+          @include radius(4);
+          border: 1px solid $neutral-300;
+        }
+      }
+      &-total {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px dashed $neutral-300;
+        padding-top: size(20);
+        .total-text,
+        .total-price {
+          color: $neutral-900;
+          font-family: $primaryfont;
+          font-size: size(20);
+          font-style: normal;
+          font-weight: 500;
+          line-height: size(28);
+        }
+      }
+    }
+  }
+}
