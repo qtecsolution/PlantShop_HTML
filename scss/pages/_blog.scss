@@ -89,5 +89,84 @@
   background-image: url("../../assets/images/blog/blog-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: size(450);
+  height: size(430);
+  margin: size(144) 0 size(120) 0;
+  &-inner {
+    position: relative;
+    &-cart {
+      position: absolute;
+      top: -144px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: $white;
+      box-shadow: 0px 32px 56px -12px rgba(15, 28, 51, 0.16);
+      display: flex;
+      width: 300px;
+      padding: size(50) 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 13px;
+      flex-shrink: 0;
+      @include breakpoint(mobile414) {
+        width: 400px;
+      }
+      @include breakpoint(mobile576) {
+        width: 550px;
+      }
+      @include breakpoint(tab992) {
+        width: 779px;
+      }
+      .title {
+        color: $neutral-900;
+        text-align: center;
+        font-family: $DMfont;
+        font-size: size(32);
+        font-style: normal;
+        font-weight: 400;
+        line-height: size(40);
+      }
+      .details {
+        color: $neutral-500;
+        text-align: center;
+        font-family: $primaryfont;
+        font-size: size(18);
+        font-style: normal;
+        font-weight: 400;
+        line-height: size(28);
+      }
+      .form {
+        display: flex;
+        align-items: center;
+        background: $white;
+        @include radius(4);
+        width: size(280);
+        @include breakpoint(mobile414) {
+          width: size(370);
+        }
+        @include breakpoint(mobile576) {
+          width: size(470);
+        }
+        padding: size(8);
+        justify-content: space-between;
+        border: 1px solid $neutral-200;
+        box-shadow: 0px 10px 14px -4px rgba(15, 28, 51, 0.08),
+          0px 2px 8px -4px rgba(15, 28, 51, 0.05);
+        // max-width: 318px;
+        .newsletter-input {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          input {
+            // flex-grow: 1;
+            width: 100%;
+          }
+        }
+        .newsletter-icon {
+          width: size(20);
+          height: size(16);
+        }
+      }
+    }
+  }
 }
