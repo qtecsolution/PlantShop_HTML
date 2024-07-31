@@ -1,2 +1,125 @@
 @use "../global" as *;
 @use "../partials" as *;
+
+.categories {
+  &-inner {
+    .categories-left {
+      .categories-title {
+        color: $neutral-900;
+        font-family: $primaryfont;
+        font-size: size(18);
+        font-weight: 600;
+        line-height: size(28);
+        margin-bottom: size(12);
+      }
+      .price-range {
+        @include radius(4);
+        background: $white;
+        padding: size(16);
+        .price-range-checkbox {
+          display: block;
+          position: relative;
+          padding-left: size(35);
+          margin-bottom: size(12);
+          &:last-child {
+            margin-bottom: size(0);
+          }
+          cursor: pointer;
+          color: $neutral-900;
+          font-family: $primaryfont;
+          font-size: size(16);
+          font-weight: 500;
+          line-height: size(24);
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+
+          input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+            &:checked ~ .checkmark {
+              background-color: $primary-color-base;
+            }
+            &:checked ~ .checkmark:after {
+              display: block;
+            }
+          }
+
+          .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: size(20);
+            width: size(20);
+            border: size(1) solid $neutral-300;
+            @include radius(3);
+            &::after {
+              content: "";
+              position: absolute;
+              display: none;
+              left: size(6);
+              top: size(1);
+              width: size(6);
+              height: size(12);
+              border: solid white;
+              border-width: size(0) size(3) size(3) size(0);
+              -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+            }
+          }
+          // &:hover input ~ .checkmark {
+          //   background-color: #ccc;
+          // }
+        }
+      }
+
+      .product-offer {
+        @include radius(4);
+        padding: size(20) 0;
+        margin-top: 30px;
+
+        .add-product {
+          background: $white;
+          display: flex;
+          width: 261px;
+          margin: auto;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: size(12);
+          .add-image {
+            width: size(180);
+            height: size(180);
+            flex-shrink: 0;
+          }
+          .add-title {
+            color: $black;
+            font-family: $DMfont;
+            font-size: size(28);
+            line-height: size(28);
+          }
+        }
+      }
+    }
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+  background: $white;
+  box-shadow: 0px 10px 14px -4px rgba(15, 28, 51, 0.08), 0px 2px 8px -4px rgba(15, 28, 51, 0.05);
+  padding: 6px;
+}

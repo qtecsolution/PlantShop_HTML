@@ -21,3 +21,10 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
+var swiper = new Swiper(".shopPageSlider", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

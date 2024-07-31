@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="./assets/css/swiper/swiper.css">
-  <link rel="stylesheet" href="./assets/css/swiper/swiper-custome.css">
   <!-- BOOTSTRAP-CSS -->
   <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
   <!-- CUSTOM-CSS -->
@@ -36,10 +35,10 @@
               <a class="desktop-menu-link" href="./index.html">Home</a>
             </li>
             <li class="desktop-menu-list">
-              <a class="desktop-menu-link" href="./shop-page.html">Shop</a>
+              <a class="desktop-menu-link menu-active" href="./shop-page.html">Shop</a>
             </li>
             <li class="desktop-menu-list">
-              <a class="desktop-menu-link menu-active" href="./blog.html">Blog</a>
+              <a class="desktop-menu-link" href="./blog.html">Blog</a>
             </li>
             <li class="desktop-menu-list">
               <a class="desktop-menu-link" href="#">Pages</a>
@@ -118,21 +117,808 @@
 
   <!-- MAIN SECTION START -->
   <main>
-    <div class="container">
-      <nav class="breadcrumb-nav my-4">
-        <ol class="breadcrumbOl">
-          <li class="breadcrumbItem">
-            <a href="./index.html">Home</a>
-            <span> > </span>
-          </li>
-          <li class="breadcrumbItem">
-            <a href="./blog.html">Blog</a>
-            <span> > </span>
-          </li>
-          <li class="breadcrumbItem">10 Essential Tips for Thriving Indoor...</li>
-        </ol>
-      </nav>
-    </div>
+
+    <!-- Categories section start -->
+    <section>
+      <div class="categories">
+        <div class="container">
+          <div class="categories-inner">
+            <div class="">
+              <nav class="breadcrumb-nav my-4">
+                <ol class="breadcrumbOl">
+                  <li class="breadcrumbItem">
+                    <a href="./index.html">Home</a>
+                    <span> > </span>
+                  </li>
+                  <li class="breadcrumbItem">Shop</li>
+                </ol>
+              </nav>
+            </div>
+
+            <div class="row">
+              <div class="col-3">
+                <div class="categories-left">
+                  <h2 class="categories-title">
+                    Categories
+                  </h2>
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <div class="category-header">
+                            <img class="category-header-img" src="./assets/images/home/category-img.png"
+                              alt="category" />
+                            <p class="category-header-text">
+                              Plant for Home
+                            </p>
+                          </div>
+
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <ul class="category-list">
+                            <li class="category-item">
+                              -Indoor Trees
+                            </li>
+
+                            <li class="category-item">
+                              -Outdoor Trees
+                            </li>
+                            <li class="category-item">
+                              -Customized Trees
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <div class="category-header">
+                            <img class="category-header-img" src="./assets/images/home/category-img1.png"
+                              alt="category" />
+                            <p class="category-header-text">
+                              Oxygen Plants
+                            </p>
+                          </div>
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <ul class="category-list">
+                            <li class="category-item">
+                              -Indoor Trees
+                            </li>
+
+                            <li class="category-item">
+                              -Outdoor Trees
+                            </li>
+                            <li class="category-item">
+                              -Customized Trees
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <div class="category-header">
+                            <img class="category-header-img" src="./assets/images/home/category-img4.png"
+                              alt="category" />
+                            <p class="category-header-text">
+                              Plant for Office
+                            </p>
+                          </div>
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <ul class="category-list">
+                            <li class="category-item">
+                              -Indoor Trees
+                            </li>
+
+                            <li class="category-item">
+                              -Outdoor Trees
+                            </li>
+                            <li class="category-item">
+                              -Customized Trees
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          <div class="category-header">
+                            <img class="category-header-img" src="./assets/images/home/category-img2.png"
+                              alt="category" />
+                            <p class="category-header-text">
+                              Plant for Outdoor
+                            </p>
+                          </div>
+                        </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <ul class="category-list">
+                            <li class="category-item">
+                              -Indoor Trees
+                            </li>
+
+                            <li class="category-item">
+                              -Outdoor Trees
+                            </li>
+                            <li class="category-item">
+                              -Customized Trees
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+
+                          <div class="category-header">
+                            <img class="category-header-img" src="./assets/images/home/category-img3.png"
+                              alt="category" />
+                            <p class="category-header-text">
+                              Water plants
+                            </p>
+                          </div>
+                        </button>
+                      </h2>
+                      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <ul class="category-list">
+                            <li class="category-item">
+                              -Indoor Trees
+                            </li>
+
+                            <li class="category-item">
+                              -Outdoor Trees
+                            </li>
+                            <li class="category-item">
+                              -Customized Trees
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+
+                          <div class="category-header">
+                            <img class="category-header-img" src="./assets/images/home/category-img4.png"
+                              alt="category" />
+                            <p class="category-header-text">
+                              Oxygen Plants
+                            </p>
+                          </div>
+                        </button>
+                      </h2>
+                      <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <ul class="category-list">
+                            <li class="category-item">
+                              -Indoor Trees
+                            </li>
+
+                            <li class="category-item">
+                              -Outdoor Trees
+                            </li>
+                            <li class="category-item">
+                              -Customized Trees
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <h2 class="categories-title">
+                    Price
+                  </h2>
+
+                  <div class="price-range">
+                    <label class="price-range-checkbox">Under $10
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="price-range-checkbox">$10 - $20
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="price-range-checkbox">$20 - $30
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="price-range-checkbox">$30 - $40
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="price-range-checkbox">$40 - $50
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+
+                  <div class="product-offer">
+                    <div class="swiper shopPageSlider">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="add-product">
+                            <figure class="add-image">
+                              <img src="./assets/images/home/add-image.png" alt="add" />
+                            </figure>
+                            <h1 class="add-title">
+                              Up to 50% Off !
+                            </h1>
+                            <button class="primary-button">
+                              Shop Now
+                            </button>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="add-product">
+                            <figure>
+                              <img src="./assets/images/home/add-image.png" alt="add" />
+                            </figure>
+                            <h1 class="add-title">
+                              Up to 50% Off !
+                            </h1>
+                            <button class="primary-button">
+                              Shop Now
+                            </button>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="add-product">
+                            <figure>
+                              <img src="./assets/images/home/add-image.png" alt="add" />
+                            </figure>
+                            <h1 class="add-title">
+                              Up to 50% Off !
+                            </h1>
+                            <button class="primary-button">
+                              Shop Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-button-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                          <path d="M15.7501 17.5L20.75 12.5L15.75 7.5" stroke="#475569" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M4.75 12.5H20.75" stroke="#475569" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                      <div class="swiper-button-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                          <path d="M9.7499 17.5L4.75 12.5L9.75 7.5" stroke="#475569" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M20.75 12.5H4.75" stroke="#475569" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-9">
+                <div class="row g-4">
+                  <div class="col-sm-6 col-lg-4">
+                    <div class="popularProduct-inner-cart">
+                      <figure class="popularProduct-inner-cart-image">
+                        <img class="product-img" src="./assets/images/home/popularProduct-bg-5.png"
+                          alt="popularProduct" />
+                        <div class="new">New</div>
+
+                        <div class="popularProduct-inner-cart-inner">
+                          <div class="popularProduct-inner-cart-hover">
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/shopping.png" alt="shopping" />
+                            </figure>
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/favourite.png" alt="favourite" />
+                            </figure>
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/View.png" alt="View" />
+                            </figure>
+                          </div>
+                        </div>
+                      </figure>
+
+                      <div class="popularProduct-inner-cart-content">
+                        <div class="title line-clamp1">Vineyard Reach</div>
+                        <div class="innerPrice">
+                          <p class="price">$20</p>
+                          <p class="discountPrice">$25</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-lg-4">
+                    <div class="popularProduct-inner-cart">
+                      <figure class="popularProduct-inner-cart-image">
+                        <img class="product-img" src="./assets/images/home/popularProduct-bg-8.png"
+                          alt="popularProduct" />
+                        <div class="new">New</div>
+
+                        <div class="popularProduct-inner-cart-inner">
+                          <div class="popularProduct-inner-cart-hover">
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/shopping.png" alt="shopping" />
+                            </figure>
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/favourite.png" alt="favourite" />
+                            </figure>
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/View.png" alt="View" />
+                            </figure>
+                          </div>
+                        </div>
+                      </figure>
+
+                      <div class="popularProduct-inner-cart-content">
+                        <div class="title line-clamp1">Petlas MultiAction PT565</div>
+                        <div class="innerPrice">
+                          <p class="price">$20</p>
+                          <p class="discountPrice">$25</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-lg-4">
+                    <div class="popularProduct-inner-cart">
+                      <figure class="popularProduct-inner-cart-image">
+                        <img class="product-img" src="./assets/images/home/popularProduct-bg-6.png"
+                          alt="popularProduct" />
+                        <div class="new">New</div>
+
+                        <div class="popularProduct-inner-cart-inner">
+                          <div class="popularProduct-inner-cart-hover">
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/shopping.png" alt="shopping" />
+                            </figure>
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/favourite.png" alt="favourite" />
+                            </figure>
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/View.png" alt="View" />
+                            </figure>
+                          </div>
+                        </div>
+                      </figure>
+
+                      <div class="popularProduct-inner-cart-content">
+                        <div class="title line-clamp1">Petlas MultiAction PT565</div>
+                        <div class="innerPrice">
+                          <p class="price">$20</p>
+                          <p class="discountPrice">$25</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-lg-4">
+                    <div class="popularProduct-inner-cart">
+                      <figure class="popularProduct-inner-cart-image">
+                        <img class="product-img" src="./assets/images/home/popularProduct-bg-2.png"
+                          alt="popularProduct" />
+                        <div class="new">New</div>
+
+                        <div class="popularProduct-inner-cart-inner">
+                          <div class="popularProduct-inner-cart-hover">
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/shopping.png" alt="shopping" />
+                            </figure>
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/favourite.png" alt="favourite" />
+                            </figure>
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/View.png" alt="View" />
+                            </figure>
+                          </div>
+                        </div>
+                      </figure>
+
+                      <div class="popularProduct-inner-cart-content">
+                        <div class="title line-clamp1">Petlas MultiAction PT565</div>
+                        <div class="innerPrice">
+                          <p class="price">$20</p>
+                          <p class="discountPrice">$25</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-lg-4">
+                    <div class="popularProduct-inner-cart">
+                      <figure class="popularProduct-inner-cart-image">
+                        <img class="product-img" src="./assets/images/home/popularProduct-bg-3.png"
+                          alt="popularProduct" />
+                        <div class="discount">-50%</div>
+
+                        <div class="popularProduct-inner-cart-inner">
+                          <div class="popularProduct-inner-cart-hover">
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/shopping.png" alt="shopping" />
+                            </figure>
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/favourite.png" alt="favourite" />
+                            </figure>
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/View.png" alt="View" />
+                            </figure>
+                          </div>
+                        </div>
+                      </figure>
+
+                      <div class="popularProduct-inner-cart-content">
+                        <div class="title line-clamp1">Petlas MultiAction PT565</div>
+                        <div class="innerPrice">
+                          <p class="price">$20</p>
+                          <p class="discountPrice">$25</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-lg-4">
+                    <div class="popularProduct-inner-cart">
+                      <figure class="popularProduct-inner-cart-image">
+                        <img class="product-img" src="./assets/images/home/popularProduct-bg-1.png"
+                          alt="popularProduct" />
+                        <div class="new">New</div>
+
+                        <div class="popularProduct-inner-cart-inner">
+                          <div class="popularProduct-inner-cart-hover">
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/shopping.png" alt="shopping" />
+                            </figure>
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/favourite.png" alt="favourite" />
+                            </figure>
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/View.png" alt="View" />
+                            </figure>
+                          </div>
+                        </div>
+                      </figure>
+
+                      <div class="popularProduct-inner-cart-content">
+                        <div class="title line-clamp1">Petlas MultiAction PT565</div>
+                        <div class="innerPrice">
+                          <p class="price">$20</p>
+                          <p class="discountPrice">$25</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-lg-4">
+                    <div class="popularProduct-inner-cart">
+                      <figure class="popularProduct-inner-cart-image">
+                        <img class="product-img" src="./assets/images/home/popularProduct-bg-10.png"
+                          alt="popularProduct" />
+                        <div class="new">New</div>
+
+                        <div class="popularProduct-inner-cart-inner">
+                          <div class="popularProduct-inner-cart-hover">
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/shopping.png" alt="shopping" />
+                            </figure>
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/favourite.png" alt="favourite" />
+                            </figure>
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/View.png" alt="View" />
+                            </figure>
+                          </div>
+                        </div>
+                      </figure>
+
+                      <div class="popularProduct-inner-cart-content">
+                        <div class="title line-clamp1">Petlas MultiAction PT565</div>
+                        <div class="innerPrice">
+                          <p class="price">$20</p>
+                          <p class="discountPrice">$25</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-lg-4">
+                    <div class="popularProduct-inner-cart">
+                      <figure class="popularProduct-inner-cart-image">
+                        <img class="product-img" src="./assets/images/home/popularProduct-bg-6.png"
+                          alt="popularProduct" />
+                        <div class="new">New</div>
+
+                        <div class="popularProduct-inner-cart-inner">
+                          <div class="popularProduct-inner-cart-hover">
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/shopping.png" alt="shopping" />
+                            </figure>
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/favourite.png" alt="favourite" />
+                            </figure>
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/View.png" alt="View" />
+                            </figure>
+                          </div>
+                        </div>
+                      </figure>
+
+                      <div class="popularProduct-inner-cart-content">
+                        <div class="title line-clamp1">Petlas MultiAction PT565</div>
+                        <div class="innerPrice">
+                          <p class="price">$20</p>
+                          <p class="discountPrice">$25</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-lg-4">
+                    <div class="popularProduct-inner-cart">
+                      <figure class="popularProduct-inner-cart-image">
+                        <img class="product-img" src="./assets/images/home/popularProduct-bg-3.png"
+                          alt="popularProduct" />
+                        <div class="discount">-50%</div>
+
+                        <div class="popularProduct-inner-cart-inner">
+                          <div class="popularProduct-inner-cart-hover">
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/shopping.png" alt="shopping" />
+                            </figure>
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/favourite.png" alt="favourite" />
+                            </figure>
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/View.png" alt="View" />
+                            </figure>
+                          </div>
+                        </div>
+                      </figure>
+
+                      <div class="popularProduct-inner-cart-content">
+                        <div class="title line-clamp1">Petlas MultiAction PT565</div>
+                        <div class="innerPrice">
+                          <p class="price">$20</p>
+                          <p class="discountPrice">$25</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-lg-4">
+                    <div class="popularProduct-inner-cart">
+                      <figure class="popularProduct-inner-cart-image">
+                        <img class="product-img" src="./assets/images/home/popularProduct-bg-9.png"
+                          alt="popularProduct" />
+                        <div class="discount">-50%</div>
+
+                        <div class="popularProduct-inner-cart-inner">
+                          <div class="popularProduct-inner-cart-hover">
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/shopping.png" alt="shopping" />
+                            </figure>
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/favourite.png" alt="favourite" />
+                            </figure>
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/View.png" alt="View" />
+                            </figure>
+                          </div>
+                        </div>
+                      </figure>
+
+                      <div class="popularProduct-inner-cart-content">
+                        <div class="title line-clamp1">Petlas MultiAction PT565</div>
+                        <div class="innerPrice">
+                          <p class="price">$20</p>
+                          <p class="discountPrice">$25</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-lg-4">
+                    <div class="popularProduct-inner-cart">
+                      <figure class="popularProduct-inner-cart-image">
+                        <img class="product-img" src="./assets/images/home/popularProduct-bg-11.png"
+                          alt="popularProduct" />
+                        <div class="discount">-50%</div>
+
+                        <div class="popularProduct-inner-cart-inner">
+                          <div class="popularProduct-inner-cart-hover">
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/shopping.png" alt="shopping" />
+                            </figure>
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/favourite.png" alt="favourite" />
+                            </figure>
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/View.png" alt="View" />
+                            </figure>
+                          </div>
+                        </div>
+                      </figure>
+
+                      <div class="popularProduct-inner-cart-content">
+                        <div class="title line-clamp1">Petlas MultiAction PT565</div>
+                        <div class="innerPrice">
+                          <p class="price">$20</p>
+                          <p class="discountPrice">$25</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-lg-4">
+                    <div class="popularProduct-inner-cart">
+                      <figure class="popularProduct-inner-cart-image">
+                        <img class="product-img" src="./assets/images/home/popularProduct-bg-10.png"
+                          alt="popularProduct" />
+                        <div class="new">New</div>
+
+                        <div class="popularProduct-inner-cart-inner">
+                          <div class="popularProduct-inner-cart-hover">
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/shopping.png" alt="shopping" />
+                            </figure>
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/favourite.png" alt="favourite" />
+                            </figure>
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/View.png" alt="View" />
+                            </figure>
+                          </div>
+                        </div>
+                      </figure>
+
+                      <div class="popularProduct-inner-cart-content">
+                        <div class="title line-clamp1">Petlas MultiAction PT565</div>
+                        <div class="innerPrice">
+                          <p class="price">$20</p>
+                          <p class="discountPrice">$25</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-lg-4">
+                    <div class="popularProduct-inner-cart">
+                      <figure class="popularProduct-inner-cart-image">
+                        <img class="product-img" src="./assets/images/home/popularProduct-bg-11.png"
+                          alt="popularProduct" />
+                        <div class="discount">-50%</div>
+
+                        <div class="popularProduct-inner-cart-inner">
+                          <div class="popularProduct-inner-cart-hover">
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/shopping.png" alt="shopping" />
+                            </figure>
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/favourite.png" alt="favourite" />
+                            </figure>
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/View.png" alt="View" />
+                            </figure>
+                          </div>
+                        </div>
+                      </figure>
+
+                      <div class="popularProduct-inner-cart-content">
+                        <div class="title line-clamp1">Petlas MultiAction PT565</div>
+                        <div class="innerPrice">
+                          <p class="price">$20</p>
+                          <p class="discountPrice">$25</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-lg-4">
+                    <div class="popularProduct-inner-cart">
+                      <figure class="popularProduct-inner-cart-image">
+                        <img class="product-img" src="./assets/images/home/popularProduct-bg-1.png"
+                          alt="popularProduct" />
+                        <div class="new">New</div>
+
+                        <div class="popularProduct-inner-cart-inner">
+                          <div class="popularProduct-inner-cart-hover">
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/shopping.png" alt="shopping" />
+                            </figure>
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/favourite.png" alt="favourite" />
+                            </figure>
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/View.png" alt="View" />
+                            </figure>
+                          </div>
+                        </div>
+                      </figure>
+
+                      <div class="popularProduct-inner-cart-content">
+                        <div class="title line-clamp1">Petlas MultiAction PT565</div>
+                        <div class="innerPrice">
+                          <p class="price">$20</p>
+                          <p class="discountPrice">$25</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-lg-4">
+                    <div class="popularProduct-inner-cart">
+                      <figure class="popularProduct-inner-cart-image">
+                        <img class="product-img" src="./assets/images/home/popularProduct-bg-9.png"
+                          alt="popularProduct" />
+                        <div class="discount">-50%</div>
+
+                        <div class="popularProduct-inner-cart-inner">
+                          <div class="popularProduct-inner-cart-hover">
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/shopping.png" alt="shopping" />
+                            </figure>
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/favourite.png" alt="favourite" />
+                            </figure>
+                            <figure class="cart-hover-bg">
+                              <img src="./assets/images/home/View.png" alt="View" />
+                            </figure>
+                          </div>
+                        </div>
+                      </figure>
+
+                      <div class="popularProduct-inner-cart-content">
+                        <div class="title line-clamp1">Petlas MultiAction PT565</div>
+                        <div class="innerPrice">
+                          <p class="price">$20</p>
+                          <p class="discountPrice">$25</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Categories section end -->
 
   </main>
   <!-- MAIN SECTION END -->
