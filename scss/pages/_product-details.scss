@@ -1,0 +1,115 @@
+@use "../global" as *;
+@use "../partials" as *;
+
+// PRODUCT DESCRIPTION review
+.product-description {
+  margin-top: size(70);
+  &-inner {
+    .product-details-nav {
+      display: flex;
+      align-items: center;
+      gap: size(70);
+      .nav-link {
+        color: $neutral-500;
+        font-family: $DMfont;
+        font-size: size(20);
+        line-height: size(28);
+        padding: 12px 0px;
+      }
+      .active {
+        color: $primary-color-base;
+        border-bottom: 1px solid $primary-color-base;
+      }
+    }
+    .tab-content {
+      padding: size(32) 0;
+      .product-description-content {
+        display: flex;
+        flex-direction: column;
+        gap: size(8);
+        li {
+          color: $neutral-600;
+          font-family: $primaryfont;
+          font-size: size(16);
+          line-height: size(24);
+        }
+      }
+
+      .review-content {
+        .average-review {
+          padding: size(16);
+          border-radius: 8px;
+          border: 1px solid var(--Foundation-Neutral-200, #e2e8f0);
+          background: var(--Foundation-white, #fff);
+          .average-rating {
+            color: $neutral-900;
+            font-family: $primaryfont;
+            font-size: size(56);
+            font-weight: 700;
+            line-height: size(72);
+          }
+
+          // .5star{
+          //   .color{}
+          // }
+        }
+      }
+    }
+  }
+}
+.review-chart {
+  width: 90%;
+  margin: 20px;
+  .star-number {
+    color: $neutral-900;
+    font-family: $primaryfont;
+    font-size: size(16);
+    font-weight: 500;
+    line-height: size(24);
+  }
+  .review {
+    height: 10px;
+    background-color: #f0f0f0;
+    margin: 5px 0;
+    position: relative;
+    border-radius: 10px;
+    span {
+      display: block;
+      height: 100%;
+      border-radius: 10px;
+      background-color: #f9a825;
+    }
+  }
+}
+// recently discounted
+.recently-discounted {
+  &-inner {
+    &-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: size(40) 0;
+
+      .title {
+        color: $neutral-900;
+        font-family: $DMfont;
+        font-size: size(32);
+        line-height: size(40);
+      }
+      .all-button {
+        display: flex;
+        align-items: center;
+        gap: size(45);
+        .view-all {
+          color: $primary-color-base;
+          font-family: $primaryfont;
+          font-size: size(20);
+          font-weight: 500;
+          line-height: size(28);
+          margin-right: size(116);
+          margin-top: size(8product-details-nav);
+        }
+      }
+    }
+  }
+}

@@ -117,8 +117,11 @@ main {
       &-image {
         position: relative;
         .product-img {
-          width: size(302);
-          height: size(302);
+          width: 100%;
+          @include breakpoint(mobile768) {
+            width: size(302);
+            height: size(302);
+          }
         }
         .new {
           position: absolute;

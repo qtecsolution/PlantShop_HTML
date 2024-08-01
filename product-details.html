@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="./assets/css/swiper/swiper.css">
-  <link rel="stylesheet" href="./assets/css/swiper/swiper-custome.css">
+  <link rel="stylesheet" href="./assets/css/swiper/product-details.css">
   <!-- BOOTSTRAP-CSS -->
   <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
   <!-- CUSTOM-CSS -->
@@ -119,136 +119,343 @@
   <!-- MAIN SECTION START -->
   <main>
 
+    <section>
+      <div class="product-description">
+        <div class="container">
+          <div class="product-description-inner">
+            <nav>
+              <div class="product-details-nav" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="product-description" data-bs-toggle="tab"
+                  data-bs-target="#nav-product-description" type="button" role="tab"
+                  aria-controls="nav-product-description" aria-selected="true">
+                  PRODUCT DESCRIPTION
+                </button>
+                <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#nav-reviews"
+                  type="button" role="tab" aria-controls="nav-reviews" aria-selected="false">
+                  Reviews
+                </button>
+              </div>
+            </nav>
+
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade active show" id="nav-product-description" role="tabpanel"
+                aria-labelledby="product-description">
+                <ul class="product-description-content">
+                  <li>
+                    Shipping & Import Fees Deposit to Bangladesh Details vailable at a lower price from other
+                  </li>
+
+                  <li>
+                    sellers that may not offer free Prime shipping.
+                  </li>
+
+                  <li>
+                    Case: Polished Gold-tone steel + black top ring
+                  </li>
+
+                  <li>
+                    Strap: Black silicone with buckle closure
+                  </li>
+
+                  <li>
+                    Strap Length: 190mm
+                  </li>
+
+                  <li>
+                    Dial Features: Day, date & 24 hr int'l time display
+                  </li>
+
+                  <li>
+                    Dial Color: Black
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="nav-reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                <div class="review-content">
+                  <div class="row">
+                    <div class="col-8">
+                      <div class="average-review">
+                        <div class="row">
+                          <div class="col-4">
+                            <div class="d-flex flex-column align-items-center gap-3 border-end">
+                              <h1 class="average-rating">
+                                4.8
+                              </h1>
+                              <div class="d-flex gap-2 align-items-center">
+                                <img src="./assets/images/home/star.svg" alt="star" />
+                                <img src="./assets/images/home/star.svg" alt="star" />
+                                <img src="./assets/images/home/star.svg" alt="star" />
+                                <img src="./assets/images/home/star.svg" alt="star" />
+                                <img src="./assets/images/home/star.svg" alt="star" />
+                              </div>
+                              <p class="total-review">
+                                54 reviews
+                              </p>
+                            </div>
+                          </div>
+                          <div class="col-8">
+                            <div class="">
+                              <div class="review-chart">
+                                <div class="d-flex gap-3 align-items-center">
+                                  <p class="star-number">5</p>
+                                  <div class="review" style="width: 100%;">
+                                    <span style="width: 80%;"></span>
+                                  </div>
+                                </div>
+
+                                <div class="d-flex gap-3 align-items-center">
+                                  <p class="star-number">4</p>
+                                  <div class="review" style="width: 100%;">
+                                    <span style="width: 60%;"></span>
+                                  </div>
+                                </div>
+
+                                <div class="d-flex gap-3 align-items-center">
+                                  <p class="star-number">3</p>
+                                  <div class="review" style="width: 100%;">
+                                    <span style="width: 40%;"></span>
+                                  </div>
+                                </div>
+                                <div class="d-flex gap-3 align-items-center">
+                                  <p class="star-number">2</p>
+                                  <div class="review" style="width: 100%;">
+                                    <span style="width: 20%;"></span>
+                                  </div>
+                                </div>
+
+                                <div class="d-flex gap-3 align-items-center">
+                                  <p class="star-number pe-1">1</p>
+                                  <div class="review" style="width: 100%;">
+                                    <span style="width: 10%;"></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
     <!-- Categories section start -->
     <section>
-      <div class="categories">
+      <div class="recently-discounted">
         <div class="container">
-          <div class="categories-inner">
-            
-            <div class="row g-4">
-              <div class="col-sm-6 col-lg-3">
-                <div class="popularProduct-inner-cart">
-                  <figure class="popularProduct-inner-cart-image">
-                    <img class="product-img" src="./assets/images/home/popularProduct-bg-5.png" alt="popularProduct" />
-                    <div class="new">New</div>
+          <div class="recently-discounted-inner">
+            <div class="recently-discounted-inner-top">
+              <h3 class="title">Recently Discounted</h3>
 
-                    <div class="popularProduct-inner-cart-inner">
-                      <div class="popularProduct-inner-cart-hover">
-                        <figure class="cart-hover-bg">
-                          <img src="./assets/images/home/shopping.png" alt="shopping" />
-                        </figure>
-                        <figure class="cart-hover-bg">
-                          <img src="./assets/images/home/favourite.png" alt="favourite" />
-                        </figure>
-                        <figure class="cart-hover-bg">
-                          <img src="./assets/images/home/View.png" alt="View" />
-                        </figure>
+              <div class="all-button">
+                <a class="view-all" href="#">View All</a>
+                <div class="d-flex align-items-center gap-3">
+                  <div class="position-relative">
+                    <button class="swiper-button-prev"></button>
+                  </div>
+                  <div class="position-relative">
+                    <button class="swiper-button-next"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper recentlyDiscountedSlider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="popularProduct-inner-cart">
+                    <figure class="popularProduct-inner-cart-image">
+                      <img class="product-img" src="./assets/images/home/popularProduct-bg-5.png"
+                        alt="popularProduct" />
+                      <div class="new">New</div>
+
+                      <div class="popularProduct-inner-cart-inner">
+                        <div class="popularProduct-inner-cart-hover">
+                          <figure class="cart-hover-bg">
+                            <img src="./assets/images/home/shopping.png" alt="shopping" />
+                          </figure>
+                          <figure class="cart-hover-bg">
+                            <img src="./assets/images/home/favourite.png" alt="favourite" />
+                          </figure>
+                          <figure class="cart-hover-bg">
+                            <img src="./assets/images/home/View.png" alt="View" />
+                          </figure>
+                        </div>
+                      </div>
+                    </figure>
+
+                    <div class="popularProduct-inner-cart-content">
+                      <div class="title line-clamp1">Vineyard Reach</div>
+                      <div class="innerPrice">
+                        <p class="price">$20</p>
+                        <p class="discountPrice">$25</p>
                       </div>
                     </div>
-                  </figure>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="popularProduct-inner-cart">
+                    <figure class="popularProduct-inner-cart-image">
+                      <img class="product-img" src="./assets/images/home/popularProduct-bg-5.png"
+                        alt="popularProduct" />
+                      <div class="new">New</div>
 
-                  <div class="popularProduct-inner-cart-content">
-                    <div class="title line-clamp1">Vineyard Reach</div>
-                    <div class="innerPrice">
-                      <p class="price">$20</p>
-                      <p class="discountPrice">$25</p>
+                      <div class="popularProduct-inner-cart-inner">
+                        <div class="popularProduct-inner-cart-hover">
+                          <figure class="cart-hover-bg">
+                            <img src="./assets/images/home/shopping.png" alt="shopping" />
+                          </figure>
+                          <figure class="cart-hover-bg">
+                            <img src="./assets/images/home/favourite.png" alt="favourite" />
+                          </figure>
+                          <figure class="cart-hover-bg">
+                            <img src="./assets/images/home/View.png" alt="View" />
+                          </figure>
+                        </div>
+                      </div>
+                    </figure>
+
+                    <div class="popularProduct-inner-cart-content">
+                      <div class="title line-clamp1">Vineyard Reach</div>
+                      <div class="innerPrice">
+                        <p class="price">$20</p>
+                        <p class="discountPrice">$25</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="popularProduct-inner-cart">
+                    <figure class="popularProduct-inner-cart-image">
+                      <img class="product-img" src="./assets/images/home/popularProduct-bg-5.png"
+                        alt="popularProduct" />
+                      <div class="new">New</div>
+
+                      <div class="popularProduct-inner-cart-inner">
+                        <div class="popularProduct-inner-cart-hover">
+                          <figure class="cart-hover-bg">
+                            <img src="./assets/images/home/shopping.png" alt="shopping" />
+                          </figure>
+                          <figure class="cart-hover-bg">
+                            <img src="./assets/images/home/favourite.png" alt="favourite" />
+                          </figure>
+                          <figure class="cart-hover-bg">
+                            <img src="./assets/images/home/View.png" alt="View" />
+                          </figure>
+                        </div>
+                      </div>
+                    </figure>
+
+                    <div class="popularProduct-inner-cart-content">
+                      <div class="title line-clamp1">Vineyard Reach</div>
+                      <div class="innerPrice">
+                        <p class="price">$20</p>
+                        <p class="discountPrice">$25</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="popularProduct-inner-cart">
+                    <figure class="popularProduct-inner-cart-image">
+                      <img class="product-img" src="./assets/images/home/popularProduct-bg-5.png"
+                        alt="popularProduct" />
+                      <div class="new">New</div>
+
+                      <div class="popularProduct-inner-cart-inner">
+                        <div class="popularProduct-inner-cart-hover">
+                          <figure class="cart-hover-bg">
+                            <img src="./assets/images/home/shopping.png" alt="shopping" />
+                          </figure>
+                          <figure class="cart-hover-bg">
+                            <img src="./assets/images/home/favourite.png" alt="favourite" />
+                          </figure>
+                          <figure class="cart-hover-bg">
+                            <img src="./assets/images/home/View.png" alt="View" />
+                          </figure>
+                        </div>
+                      </div>
+                    </figure>
+
+                    <div class="popularProduct-inner-cart-content">
+                      <div class="title line-clamp1">Vineyard Reach</div>
+                      <div class="innerPrice">
+                        <p class="price">$20</p>
+                        <p class="discountPrice">$25</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="popularProduct-inner-cart">
+                    <figure class="popularProduct-inner-cart-image">
+                      <img class="product-img" src="./assets/images/home/popularProduct-bg-5.png"
+                        alt="popularProduct" />
+                      <div class="new">New</div>
+
+                      <div class="popularProduct-inner-cart-inner">
+                        <div class="popularProduct-inner-cart-hover">
+                          <figure class="cart-hover-bg">
+                            <img src="./assets/images/home/shopping.png" alt="shopping" />
+                          </figure>
+                          <figure class="cart-hover-bg">
+                            <img src="./assets/images/home/favourite.png" alt="favourite" />
+                          </figure>
+                          <figure class="cart-hover-bg">
+                            <img src="./assets/images/home/View.png" alt="View" />
+                          </figure>
+                        </div>
+                      </div>
+                    </figure>
+
+                    <div class="popularProduct-inner-cart-content">
+                      <div class="title line-clamp1">Vineyard Reach</div>
+                      <div class="innerPrice">
+                        <p class="price">$20</p>
+                        <p class="discountPrice">$25</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="popularProduct-inner-cart">
+                    <figure class="popularProduct-inner-cart-image">
+                      <img class="product-img" src="./assets/images/home/popularProduct-bg-5.png"
+                        alt="popularProduct" />
+                      <div class="new">New</div>
+
+                      <div class="popularProduct-inner-cart-inner">
+                        <div class="popularProduct-inner-cart-hover">
+                          <figure class="cart-hover-bg">
+                            <img src="./assets/images/home/shopping.png" alt="shopping" />
+                          </figure>
+                          <figure class="cart-hover-bg">
+                            <img src="./assets/images/home/favourite.png" alt="favourite" />
+                          </figure>
+                          <figure class="cart-hover-bg">
+                            <img src="./assets/images/home/View.png" alt="View" />
+                          </figure>
+                        </div>
+                      </div>
+                    </figure>
+
+                    <div class="popularProduct-inner-cart-content">
+                      <div class="title line-clamp1">Vineyard Reach</div>
+                      <div class="innerPrice">
+                        <p class="price">$20</p>
+                        <p class="discountPrice">$25</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <div class="col-sm-6 col-lg-3">
-                <div class="popularProduct-inner-cart">
-                  <figure class="popularProduct-inner-cart-image">
-                    <img class="product-img" src="./assets/images/home/popularProduct-bg-8.png" alt="popularProduct" />
-                    <div class="new">New</div>
-
-                    <div class="popularProduct-inner-cart-inner">
-                      <div class="popularProduct-inner-cart-hover">
-                        <figure class="cart-hover-bg">
-                          <img src="./assets/images/home/shopping.png" alt="shopping" />
-                        </figure>
-                        <figure class="cart-hover-bg">
-                          <img src="./assets/images/home/favourite.png" alt="favourite" />
-                        </figure>
-                        <figure class="cart-hover-bg">
-                          <img src="./assets/images/home/View.png" alt="View" />
-                        </figure>
-                      </div>
-                    </div>
-                  </figure>
-
-                  <div class="popularProduct-inner-cart-content">
-                    <div class="title line-clamp1">Petlas MultiAction PT565</div>
-                    <div class="innerPrice">
-                      <p class="price">$20</p>
-                      <p class="discountPrice">$25</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-lg-3">
-                <div class="popularProduct-inner-cart">
-                  <figure class="popularProduct-inner-cart-image">
-                    <img class="product-img" src="./assets/images/home/popularProduct-bg-6.png" alt="popularProduct" />
-                    <div class="new">New</div>
-
-                    <div class="popularProduct-inner-cart-inner">
-                      <div class="popularProduct-inner-cart-hover">
-                        <figure class="cart-hover-bg">
-                          <img src="./assets/images/home/shopping.png" alt="shopping" />
-                        </figure>
-                        <figure class="cart-hover-bg">
-                          <img src="./assets/images/home/favourite.png" alt="favourite" />
-                        </figure>
-                        <figure class="cart-hover-bg">
-                          <img src="./assets/images/home/View.png" alt="View" />
-                        </figure>
-                      </div>
-                    </div>
-                  </figure>
-
-                  <div class="popularProduct-inner-cart-content">
-                    <div class="title line-clamp1">Petlas MultiAction PT565</div>
-                    <div class="innerPrice">
-                      <p class="price">$20</p>
-                      <p class="discountPrice">$25</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-lg-3">
-                <div class="popularProduct-inner-cart">
-                  <figure class="popularProduct-inner-cart-image">
-                    <img class="product-img" src="./assets/images/home/popularProduct-bg-2.png" alt="popularProduct" />
-                    <div class="new">New</div>
-
-                    <div class="popularProduct-inner-cart-inner">
-                      <div class="popularProduct-inner-cart-hover">
-                        <figure class="cart-hover-bg">
-                          <img src="./assets/images/home/shopping.png" alt="shopping" />
-                        </figure>
-                        <figure class="cart-hover-bg">
-                          <img src="./assets/images/home/favourite.png" alt="favourite" />
-                        </figure>
-                        <figure class="cart-hover-bg">
-                          <img src="./assets/images/home/View.png" alt="View" />
-                        </figure>
-                      </div>
-                    </div>
-                  </figure>
-
-                  <div class="popularProduct-inner-cart-content">
-                    <div class="title line-clamp1">Petlas MultiAction PT565</div>
-                    <div class="innerPrice">
-                      <p class="price">$20</p>
-                      <p class="discountPrice">$25</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <!-- <div class="swiper-pagination"></div> -->
+              <!-- <div class=""></div>
+              <div class="swiper-pagination"></div> -->
             </div>
           </div>
         </div>
