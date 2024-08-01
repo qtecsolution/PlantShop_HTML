@@ -6,6 +6,7 @@
   border-width: 1px;
   border-style: solid;
   @include radius(4);
+  padding: size(8) size(12);
 }
 .accordion-item {
   background-color: $neutral-50;
