@@ -58,6 +58,7 @@
   gap: size(8);
   padding: size(12) size(20);
   background: $neutral-200;
+  color: $neutral-900;
   @include radius(4);
   border: none;
   transition: all 0.35s ease-in-out;
