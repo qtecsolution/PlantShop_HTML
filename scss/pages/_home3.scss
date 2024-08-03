@@ -197,9 +197,11 @@
 
     &-image {
       position: relative;
-
       .product-img {
-        width: size(302);
+        width: 100%;
+        @include breakpoint(mobile576) {
+          width: size(302);
+        }
         height: size(302);
       }
 
@@ -350,7 +352,10 @@
         position: relative;
 
         .product-img {
-          width: size(302);
+          width: 100%;
+          @include breakpoint(mobile576) {
+            width: size(302);
+          }
           height: size(302);
         }
 
@@ -489,10 +494,19 @@
       &-inner {
         position: absolute;
         top: 50%;
-        left: -75%;
+        left: 50%;
+        width: size(400);
+        @include breakpoint(mobile768) {
+          left: 10%;
+          width: size(582);
+        }
+        @include breakpoint(tab992) {
+          left: -75%;
+        }
         display: flex;
-        width: size(582);
-        transform: translateY(-50%);
+
+        transform: translate(-50%, -50%);
+        // transform: translateX(-50%);
         // height: 252px;
         padding: size(32);
         flex-direction: column;
