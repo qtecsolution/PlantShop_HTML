@@ -3,14 +3,14 @@
 
 .footer-inner {
   background: $primary-color-700;
-  padding: 48px 0;
+  padding: size(48) 0;
 
   .footer-left-content {
     p {
-      margin-top: 20px;
+      margin-top: size(20);
       color: $white;
       font-family: $primaryfont;
-      font-size: 16px;
+      font-size: size(16);
     }
   }
 
@@ -23,10 +23,10 @@
     ul {
       list-style: none;
       padding-left: 0;
-      margin-top: 16px;
+      margin-top: size(16);
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: size(8);
       .footer-list {
         .footer-link {
           color: $white;
@@ -43,13 +43,13 @@
       color: $white;
       font-family: $primaryfont;
       font-size: size(20);
-      margin-bottom: 16px;
+      margin-bottom: size(16);
     }
     .social-icn {
       display: flex;
       align-items: center;
-      gap: 16px;
-      margin-bottom: 24px;
+      gap: size(16);
+      margin-bottom: size(24);
     }
     p {
       color: $white;
@@ -62,23 +62,30 @@
       display: flex;
       align-items: center;
       background: $white;
-      border-radius: 4px;
-      padding: 4px 4px 4px 6px;
+      @include radius(4);
+      padding: size(4) size(4) size(4) size(6);
       justify-content: space-between;
-      margin-top: 16px;
+      margin-top: size(16);
       // max-width: 318px;
       .newsletter-input {
         display: flex;
         align-items: center;
-        gap: 4px;
+        gap: size(4);
         input {
           // flex-grow: 1;
           width: 100%;
+          &::placeholder {
+            color: $neutral-400;
+            font-family: $primaryfont;
+            font-size: size(14);
+            line-height: size(20);
+          }
         }
       }
       .newsletter-icon {
         width: size(20);
         height: size(16);
+        margin-bottom: size(4);
       }
     }
   }
@@ -94,6 +101,5 @@
     font-size: size(12);
     font-weight: 500;
     line-height: size(18);
-
   }
 }

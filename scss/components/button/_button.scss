@@ -2,7 +2,24 @@
 @use "../../partials" as *;
 
 .primary-button {
-  padding: size(12) size(20);
+  padding: size(12) size(30);
+  @include radius(4);
+  background: $primary-color-base;
+  color: $white;
+  font-family: $primaryfont;
+  font-size: size(16);
+  font-weight: 500;
+  line-height: 24px;
+  border: none;
+  transition: all 0.35s ease-in-out;
+  @include hover {
+    background: $primary-color-700;
+  }
+}
+.submit-button {
+  display: block;
+  text-align: center;
+  padding: size(12) size(30);
   @include radius(4);
   background: $primary-color-base;
   color: $white;
@@ -17,7 +34,7 @@
   }
 }
 .blog-button {
-  padding: size(12) size(20);
+  padding: size(12) size(30);
   @include radius(4);
   background: $white;
   border: 1px solid $primary-color-base;

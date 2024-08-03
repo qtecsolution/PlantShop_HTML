@@ -161,6 +161,12 @@
           input {
             // flex-grow: 1;
             width: 100%;
+            &::placeholder {
+            color: $neutral-400;
+            font-family: $primaryfont;
+            font-size: size(14);
+            line-height: size(20);
+          }
           }
         }
         .newsletter-icon {

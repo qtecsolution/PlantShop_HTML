@@ -3,6 +3,36 @@
 
 .categories {
   &-inner {
+    .short-by {
+      .text {
+        color: $neutral-600;
+        font-family: $primaryfont;
+        font-size: size(16);
+        font-style: normal;
+        font-weight: 500;
+        line-height: size(24);
+      }
+
+      .nice-select {
+        background-color: transparent;
+        @include radius(4);
+        border: solid 1px $neutral-300;
+        box-sizing: border-box;
+        font-size: size(16);
+        font-family: $primaryfont;
+        color: $neutral-600;
+        font-weight: normal;
+        padding-left: 12px;
+        padding-right: 100px;
+        span {
+          font-family: $primaryfont;
+          color: $neutral-600;
+        }
+        .nice-select-dropdown {
+          width: 100%;
+        }
+      }
+    }
     .categories-left {
       .categories-title {
         color: $neutral-900;
@@ -155,9 +185,9 @@
       }
     }
 
-    .active{
+    .active {
       background: $primary-color-base;
-      .page-link{
+      .page-link {
         color: $white;
       }
     }
