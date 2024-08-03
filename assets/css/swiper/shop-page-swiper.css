@@ -12,12 +12,12 @@
 }
 
 .swiper-button-prev, .swiper-rtl .swiper-button-next {
-  left: -15px;
+  left: 0;
   right: auto;
 }
 
 .swiper-button-next, .swiper-rtl .swiper-button-prev {
-  right: -15px;
+  right: 0;
   left: auto;
 }
 .swiper-button-next svg,
