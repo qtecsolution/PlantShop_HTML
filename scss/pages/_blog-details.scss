@@ -23,17 +23,25 @@
       .blog-author {
         display: flex;
         align-items: center;
+        gap: size(24);
         .name {
-          padding-right: size(12);
-          border-right: 1px solid #94a3b8;
+          position: relative;
           color: $neutral-600;
           font-family: $primaryfont;
           font-size: size(16);
           font-weight: 500;
           line-height: size(24);
+          &::after {
+            position: absolute;
+            top: size(4);
+            right: size(-12);
+            content: "";
+            width: size(1);
+            height: size(14);
+            background-color: #94a3b8;
+          }
         }
         .publish {
-          padding-left: size(12);
           color: $neutral-600;
           font-family: $primaryfont;
           font-size: size(16);
@@ -262,7 +270,7 @@
                   width: size(20);
                 }
               }
-              textarea{
+              textarea {
                 &::placeholder {
                   color: $neutral-400;
                   font-family: $primaryfont;
