@@ -59,7 +59,7 @@ main {
       display: flex;
       justify-content: center;
       align-items: end;
-      padding-bottom: 20px;
+      padding: size(37) size(37) size(20) size(37);
       .category-img {
         height: size(108);
         width: size(108);
