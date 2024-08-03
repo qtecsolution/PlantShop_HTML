@@ -41,10 +41,11 @@
     .mobile-menu {
       list-style: none;
       flex-direction: column;
-      gap: 10px;
+      gap: size(16);
       padding-left: 0;
       .mobile-menu-list {
         .mobile-menu-link {
+          padding-left: size(16);
           color: $neutral-900;
           font-family: "Onest ", sans-serif;
           font-size: 16px;

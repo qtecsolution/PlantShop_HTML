@@ -265,10 +265,11 @@
 .header .header-nav .mobile-menu {
   list-style: none;
   flex-direction: column;
-  gap: 10px;
+  gap: 1rem;
   padding-left: 0;
 }
 .header .header-nav .mobile-menu .mobile-menu-list .mobile-menu-link {
+  padding-left: 1rem;
   color: #0f172a;
   font-family: "Onest ", sans-serif;
   font-size: 16px;
@@ -320,10 +321,11 @@
 .header2 .header-nav .mobile-menu {
   list-style: none;
   flex-direction: column;
-  gap: 10px;
+  gap: 1rem;
   padding-left: 0;
 }
 .header2 .header-nav .mobile-menu .mobile-menu-list .mobile-menu-link {
+  padding-left: 1rem;
   color: #0f172a;
   font-family: "Onest ", sans-serif;
   font-size: 16px;
