@@ -37,7 +37,6 @@
         display: flex;
         align-items: center;
         gap: size(10);
-        padding-right: size(10);
         .ratting {
           i {
             font-size: size(12);
@@ -67,13 +66,32 @@
       }
 
       .all-review {
-        border-right: 1px solid $neutral-300;
-        border-left: 1px solid $neutral-300;
-        padding: 0 size(10);
+        // border-right: 1px solid $neutral-300;
+        // border-left: 1px solid $neutral-300;
+        // padding: 0 size(10);
+        position: relative;
+        &::after {
+          position: absolute;
+          top: size(4);
+          right: size(-12);
+          content: "";
+          width: size(1);
+          height: size(14);
+          background-color: #94a3b8;
+        }
+        &::before {
+          position: absolute;
+          top: size(4);
+          left: size(-12);
+          content: "";
+          width: size(1);
+          height: size(14);
+          background-color: #94a3b8;
+        }
       }
-      .all-sold {
-        padding-left: size(10);
-      }
+      // .all-sold {
+
+      // }
 
       .product-price {
         color: $neutral-900;

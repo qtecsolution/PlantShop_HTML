@@ -279,11 +279,12 @@
 
 .menu-active {
   color: #005042 !important;
+  font-weight: 700;
 }
 
 .header2 {
   position: sticky;
-  background: #F8FAFC;
+  background: #f8fafc;
   z-index: 20;
   top: 0;
 }
@@ -333,6 +334,7 @@
 
 .menu-active {
   color: #005042 !important;
+  font-weight: 700 !important;
 }
 
 input,
@@ -2562,8 +2564,7 @@ main {
 
 .inner-recentBlock2 {
   background: #F8FAFC;
-  padding-top: 8.75rem;
-  padding-bottom: 5rem;
+  padding: 5rem 0;
 }
 .inner-recentBlock2 .section-header {
   color: #0f172a;
@@ -3585,9 +3586,6 @@ main {
   text-align: center;
 }
 
-.contact-us-section-inner {
-  margin: 5rem 0;
-}
 .contact-us-section-inner .breadcrumb-nav .breadcrumbOl {
   list-style: none;
   padding-left: 0;
@@ -4529,8 +4527,6 @@ main {
 .categories-inner .categories-left .product-offer .add-product {
   background: hsl(0, 0%, 100%);
   display: flex;
-  width: 261px;
-  margin: auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -4546,6 +4542,7 @@ main {
   font-family: "DM Serif Display", serif;
   font-size: 1.75rem;
   line-height: 1.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .pagination-items {
@@ -4634,7 +4631,6 @@ main {
   display: flex;
   align-items: center;
   gap: 0.625rem;
-  padding-right: 0.625rem;
 }
 .product-details-inner .inner-product-details .product-ratting .ratting i {
   font-size: 0.75rem;
@@ -4661,12 +4657,25 @@ main {
   line-height: 1.5rem;
 }
 .product-details-inner .inner-product-details .all-review {
-  border-right: 1px solid #cbd5e1;
-  border-left: 1px solid #cbd5e1;
-  padding: 0 0.625rem;
+  position: relative;
 }
-.product-details-inner .inner-product-details .all-sold {
-  padding-left: 0.625rem;
+.product-details-inner .inner-product-details .all-review::after {
+  position: absolute;
+  top: 0.25rem;
+  right: -0.75rem;
+  content: "";
+  width: 0.0625rem;
+  height: 0.875rem;
+  background-color: #94a3b8;
+}
+.product-details-inner .inner-product-details .all-review::before {
+  position: absolute;
+  top: 0.25rem;
+  left: -0.75rem;
+  content: "";
+  width: 0.0625rem;
+  height: 0.875rem;
+  background-color: #94a3b8;
 }
 .product-details-inner .inner-product-details .product-price {
   color: #0f172a;

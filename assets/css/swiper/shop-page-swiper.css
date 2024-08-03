@@ -11,6 +11,15 @@
   height: 36px;
 }
 
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  left: -15px;
+  right: auto;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  right: -15px;
+  left: auto;
+}
 .swiper-button-next svg,
 .swiper-button-prev svg {
   width: 24px;

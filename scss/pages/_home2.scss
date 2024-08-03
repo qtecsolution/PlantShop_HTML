@@ -644,8 +644,7 @@
 // Read our recent Blogs section
 .inner-recentBlock2 {
   background: $neutral-50;
-  padding-top: size(140);
-  padding-bottom: size(80);
+  padding: size(80) 0;
   .section-header {
     color: $neutral-900;
     font-family: $DMfont;

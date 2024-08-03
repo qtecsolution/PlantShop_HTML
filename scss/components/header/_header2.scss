@@ -3,7 +3,7 @@
 
 .header2 {
   position: sticky;
-  background: #F8FAFC;
+  background: #f8fafc;
   z-index: 20;
 
   top: 0;
@@ -55,4 +55,5 @@
 }
 .menu-active {
   color: $primary-color-700 !important;
+  font-weight: 700 !important;
 }

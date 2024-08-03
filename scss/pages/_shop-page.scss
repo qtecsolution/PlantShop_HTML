@@ -116,8 +116,8 @@
         .add-product {
           background: $white;
           display: flex;
-          width: 261px;
-          margin: auto;
+          // width: 261px;
+          // margin: auto;
           flex-direction: column;
           justify-content: center;
           align-items: center;
@@ -132,6 +132,7 @@
             font-family: $DMfont;
             font-size: size(28);
             line-height: size(28);
+            margin-bottom: size(12);
           }
         }
       }
