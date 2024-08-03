@@ -70,7 +70,9 @@
       }
       .price-section {
         display: flex;
-        flex-direction: column;
+        @include breakpoint(mobile768){
+          flex-direction: column;
+        }
         gap: size(8);
         .price {
           color: $neutral-900;

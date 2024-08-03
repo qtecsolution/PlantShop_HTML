@@ -3528,8 +3528,12 @@ main {
 }
 .favorite-section-inner .favorite-details .price-section {
   display: flex;
-  flex-direction: column;
   gap: 0.5rem;
+}
+@media screen and (min-width: 48rem) {
+  .favorite-section-inner .favorite-details .price-section {
+    flex-direction: column;
+  }
 }
 .favorite-section-inner .favorite-details .price-section .price {
   color: #0f172a;
@@ -3587,6 +3591,9 @@ main {
   text-align: center;
 }
 
+.contact-us-section-inner {
+  margin-bottom: 5rem;
+}
 .contact-us-section-inner .breadcrumb-nav .breadcrumbOl {
   list-style: none;
   padding-left: 0;
