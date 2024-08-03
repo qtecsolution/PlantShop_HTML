@@ -246,7 +246,8 @@
       &-image {
         position: relative;
         .product-img {
-          width: size(302);
+          // width: size(302);
+          width: 100%;
           height: size(302);
         }
         .new {
