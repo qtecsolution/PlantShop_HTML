@@ -54,6 +54,7 @@
         .cart-image {
           height: size(80);
           width: size(80);
+          flex-shrink: 0;
           img {
             width: 100%;
             @include radius(4);
@@ -70,7 +71,9 @@
       }
       .price-section {
         display: flex;
-        flex-direction: column;
+        @include breakpoint(mobile576) {
+          flex-direction: column;
+        }
         gap: size(8);
         .price {
           color: $neutral-900;
@@ -93,14 +96,11 @@
       .product-quantity {
         background: $white;
         display: flex;
-        width: size(80);
+        width: size(150);
         padding: size(6) size(12);
         justify-content: space-between;
         align-items: center;
         @include radius(4);
-        @include breakpoint(mobile576) {
-          width: size(150);
-        }
         .decrement-btn,
         .increment-btn {
           border: none;

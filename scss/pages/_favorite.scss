@@ -54,6 +54,7 @@
         .favorite-image {
           height: size(80);
           width: size(80);
+          flex-shrink: 0;
           img {
             width: 100%;
             @include radius(4);
