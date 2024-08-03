@@ -2976,6 +2976,97 @@ main {
   -webkit-line-clamp: 1;
 }
 
+.happy-clients {
+  margin-top: 7.5rem;
+}
+.happy-clients-inner .happy-clients-title {
+  color: #0f172a;
+  font-family: "DM Serif Display", serif;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  text-align: center;
+}
+.happy-clients-inner .happy-clients-details {
+  color: #475569;
+  text-align: center;
+  font-family: "Onest", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.happy-clients-inner .client-say-cart {
+  width: 100%;
+}
+.happy-clients-inner .client-say-cart .happy-client-image {
+  position: relative;
+}
+.happy-clients-inner .client-say-cart .happy-client-image img {
+  width: 100%;
+}
+.happy-clients-inner .client-say-cart-inner {
+  position: absolute;
+  top: 50%;
+  left: -75%;
+  display: flex;
+  width: 36.375rem;
+  transform: translateY(-50%);
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.25rem;
+  border-radius: 0.5rem;
+  background: hsl(0, 0%, 100%);
+  box-shadow: 0px 10px 14px -4px rgba(15, 28, 51, 0.08), 0px 2px 8px -4px rgba(15, 28, 51, 0.05);
+}
+.happy-clients-inner .client-say-cart-inner .client-say-title {
+  color: #0f172a;
+  font-family: "DM Serif Display", serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.happy-clients-inner .client-say-cart-inner .client-say-details {
+  color: #64748B;
+  font-family: "Onest", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.happy-clients-inner .client-say-cart-inner .user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.happy-clients-inner .client-say-cart-inner .user-info .user-image {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+}
+.happy-clients-inner .client-say-cart-inner .user-info .user-image img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+}
+.happy-clients-inner .client-say-cart-inner .user-info .user-name {
+  color: #0f172a;
+  font-family: "Onest", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.happy-clients-inner .client-say-cart-inner .user-info .date {
+  color: #94a3b8;
+  font-family: "Onest", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.happy-clients-inner .client-say-cart-inner .user-info .ratting .star-yellow {
+  font-size: 0.875rem;
+  color: #EAB308;
+}
+.happy-clients-inner .client-say-cart-inner .user-info .ratting .star-gray {
+  font-size: 0.875rem;
+  color: #94A3B8;
+}
+
 .inner-support3 {
   margin-top: 7rem;
   background: #00715d;
@@ -3003,7 +3094,8 @@ main {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 28px; /* 140% */
+  line-height: 28px;
+  /* 140% */
 }
 .inner-support3 .support-content .support-text p {
   color: hsl(0, 0%, 100%);
@@ -3013,7 +3105,8 @@ main {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
+  /* 150% */
 }
 
 .inner-recentBlock3 {

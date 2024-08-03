@@ -27,6 +27,16 @@ var swiper = new Swiper(".shopPageSlider", {
     prevEl: ".swiper-button-prev",
   },
 });
+var swiper = new Swiper(".happyClientsSlider", {
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 var swiper = new Swiper(".recentlyDiscountedSlider", {
   slidesPerView: 1,
@@ -54,6 +64,8 @@ var swiper = new Swiper(".recentlyDiscountedSlider", {
     },
   },
 });
+
+
 
 // ----------------------------
 var galleryThumbs = new Swiper(".gallery-thumbs", {
