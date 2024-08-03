@@ -142,12 +142,19 @@
 
 .pagination-items {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   margin: size(48) 0;
+  @include breakpoint(mobile576) {
+    justify-content: end;
+  }
   .pagination-body {
     display: flex;
     list-style: none;
-    gap: size(4);
+    padding-left: 0;
+    gap: size(2);
+    @include breakpoint(mobile576) {
+      gap: size(4);
+    }
     .page-item {
       @include radius(4);
       .page-link {
