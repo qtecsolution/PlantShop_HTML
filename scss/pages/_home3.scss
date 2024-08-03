@@ -495,19 +495,16 @@
         position: absolute;
         top: 50%;
         left: 50%;
+        transform: translate(-50%, -50%);
         width: size(400);
         @include breakpoint(mobile768) {
-          left: 10%;
           width: size(582);
         }
         @include breakpoint(tab992) {
           left: -75%;
+          transform: translate(0%, -50%);
         }
         display: flex;
-
-        transform: translate(-50%, -50%);
-        // transform: translateX(-50%);
-        // height: 252px;
         padding: size(32);
         flex-direction: column;
         justify-content: center;
