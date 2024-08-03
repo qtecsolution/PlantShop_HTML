@@ -306,7 +306,6 @@
   margin-top: size(112);
 
   &-inner {
-
     // margin-top: size(112);
     &-header {
       color: $neutral-900;
@@ -485,7 +484,6 @@
         img {
           width: 100%;
         }
-
       }
 
       &-inner {
@@ -503,7 +501,8 @@
         gap: size(20);
         @include radius(8);
         background: $white;
-        box-shadow: 0px 10px 14px -4px rgba(15, 28, 51, 0.08), 0px 2px 8px -4px rgba(15, 28, 51, 0.05);
+        box-shadow: 0px 10px 14px -4px rgba(15, 28, 51, 0.08),
+          0px 2px 8px -4px rgba(15, 28, 51, 0.05);
 
         .client-say-title {
           color: $neutral-900;
@@ -554,17 +553,29 @@
           .ratting {
             .star-yellow {
               font-size: size(14);
-              color: #EAB308;
+              color: #eab308;
             }
 
             .star-gray {
               font-size: size(14);
-              color: #94A3B8;
+              color: #94a3b8;
             }
           }
         }
       }
+    }
 
+    .gray-color {
+      width: 24px;
+      height: 4px;
+      border-radius: 8px;
+      background: $neutral-300;
+    }
+    .green-color {
+      width: 24px;
+      height: 4px;
+      border-radius: 8px;
+      background: $primary-color-base;
     }
   }
 }

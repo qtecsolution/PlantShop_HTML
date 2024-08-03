@@ -3060,11 +3060,23 @@ main {
 }
 .happy-clients-inner .client-say-cart-inner .user-info .ratting .star-yellow {
   font-size: 0.875rem;
-  color: #EAB308;
+  color: #eab308;
 }
 .happy-clients-inner .client-say-cart-inner .user-info .ratting .star-gray {
   font-size: 0.875rem;
-  color: #94A3B8;
+  color: #94a3b8;
+}
+.happy-clients-inner .gray-color {
+  width: 24px;
+  height: 4px;
+  border-radius: 8px;
+  background: #cbd5e1;
+}
+.happy-clients-inner .green-color {
+  width: 24px;
+  height: 4px;
+  border-radius: 8px;
+  background: #00715d;
 }
 
 .inner-support3 {
