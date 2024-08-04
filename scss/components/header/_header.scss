@@ -61,3 +61,7 @@
   color: $primary-color-700 !important;
   font-weight: 700;
 }
+.mobile-menu-open {
+  border: none;
+  @include radius(4);
+}

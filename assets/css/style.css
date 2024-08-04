@@ -283,6 +283,11 @@
   font-weight: 700;
 }
 
+.mobile-menu-open {
+  border: none;
+  border-radius: 0.25rem;
+}
+
 .header2 {
   position: sticky;
   background: #f8fafc;
