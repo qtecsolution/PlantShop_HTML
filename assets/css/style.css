@@ -4182,15 +4182,19 @@ main {
 }
 .blog-details-inner-cart .all-comments .comments-nav-right .list .social-icon {
   cursor: pointer;
+  transition: all 0.35s ease-in-out;
 }
 .blog-details-inner-cart .all-comments .comments-nav-right .list .social-icon svg {
   width: 2rem;
   height: 2rem;
   border-radius: 62499.9375rem;
-  fill: #cbd5e1;
   transition: all 0.35s ease-in-out;
 }
-.blog-details-inner-cart .all-comments .comments-nav-right .list .social-icon svg:hover {
+.blog-details-inner-cart .all-comments .comments-nav-right .list .social-icon svg path {
+  transition: all 0.35s ease-in-out;
+  fill: #cbd5e1;
+}
+.blog-details-inner-cart .all-comments .comments-nav-right .list .social-icon:hover svg path {
   fill: #00715d;
 }
 .blog-details-inner-cart .all-comments .comments-nav-right .list .social-icon .social-item-svg {
@@ -4323,6 +4327,9 @@ main {
 .blog-details-inner-cart .comment-form-inner .input-field-inner-img svg {
   height: 1.25rem;
   width: 1.25rem;
+}
+.blog-details-inner-cart .comment-form-inner .input-field-inner textarea {
+  width: 100%;
 }
 .blog-details-inner-cart .comment-form-inner .input-field-inner textarea::-moz-placeholder {
   color: #94a3b8;

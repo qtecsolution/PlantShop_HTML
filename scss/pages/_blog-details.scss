@@ -130,15 +130,26 @@
 
               .social-icon {
                 cursor: pointer;
-
+                transition: all 0.35s ease-in-out;
+                // background: #eef2f7;
+                // @include radius(999999);
+                // padding: size(8);
                 svg {
                   width: size(32);
                   height: size(32);
                   @include radius(999999);
-                  fill: #cbd5e1;
                   transition: all 0.35s ease-in-out;
-                  &:hover {
-                    fill: $primary-color-base;
+                  path {
+                    transition: all 0.35s ease-in-out;
+                    fill: #cbd5e1;
+                  }
+                }
+
+                &:hover {
+                  svg {
+                    path {
+                      fill: $primary-color-base;
+                    }
                   }
                 }
 
@@ -282,6 +293,7 @@
                 }
               }
               textarea {
+                width: 100%;
                 &::placeholder {
                   color: $neutral-400;
                   font-family: $primaryfont;
