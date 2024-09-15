@@ -131,6 +131,12 @@
               .social-icon {
                 cursor: pointer;
 
+                svg {
+                  width: size(32);
+                  height: size(32);
+                  @include radius(999999);
+                }
+
                 .social-item-svg {
                   width: size(32);
                   height: size(32);

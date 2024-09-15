@@ -4183,6 +4183,11 @@ main {
 .blog-details-inner-cart .all-comments .comments-nav-right .list .social-icon {
   cursor: pointer;
 }
+.blog-details-inner-cart .all-comments .comments-nav-right .list .social-icon svg {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 62499.9375rem;
+}
 .blog-details-inner-cart .all-comments .comments-nav-right .list .social-icon .social-item-svg {
   width: 2rem;
   height: 2rem;
