@@ -135,6 +135,11 @@
                   width: size(32);
                   height: size(32);
                   @include radius(999999);
+                  fill: #cbd5e1;
+                  transition: all 0.35s ease-in-out;
+                  &:hover {
+                    fill: $primary-color-base;
+                  }
                 }
 
                 .social-item-svg {
