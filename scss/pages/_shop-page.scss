@@ -14,7 +14,7 @@
       }
 
       .nice-select {
-        background-color: transparent;
+        background-color: #f1f3f5;
         @include radius(4);
         border: solid 1px $neutral-300;
         box-sizing: border-box;
@@ -282,8 +282,9 @@
 .categories-menu-open {
   border: none;
   @include radius(4);
-  padding-top: size(6);
+  padding: size(10) size(6) size(6) size(6);
   font-family: $primaryfont;
-  color: #475569;
-  font-weight: 500;
+  color: $neutral-600;
+  // font-weight: 500;
+  background: #f1f3f5;
 }
