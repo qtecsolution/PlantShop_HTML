@@ -16,7 +16,8 @@
   <!-- nice select2 -->
   <link rel="stylesheet" href="./assets/css/nice-select/nice-select2.css">
   <!-- BOOTSTRAP-CSS -->
-  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
+  <!-- <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" /> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- CUSTOM-CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
 
@@ -173,9 +174,19 @@
 
 
               <div class="mt-3 mt-lg-0 d-flex align-items-center justify-content-between gap-2">
+                <button class="d-flex align-items-center d-lg-none categories-menu-open" data-bs-toggle="offcanvas"
+                  aria-controls="categories-offcanvas" type="button" data-bs-target="#categories-offcanvas">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-filter" viewBox="0 0 20 20">
+                    <path
+                      d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5" />
+                  </svg>
+                  Filter
+                </button>
+
                 <div class="d-flex align-items-center gap-1 gap-sm-3 short-by">
                   <p class="text">
-                    Short by :
+                    Sort:
                   </p>
                   <div class="box">
                     <select class="shortBySelect">
@@ -184,21 +195,11 @@
                     </select>
                   </div>
                 </div>
-
-                <button class=" d-flex align-items-center d-lg-none categories-menu-open" data-bs-toggle="offcanvas"
-                  href="#categories-offcanvas" role="button" aria-controls="categories-offcanvas">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                    class="bi bi-filter" viewBox="0 0 20 20">
-                    <path
-                      d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5" />
-                  </svg>
-                  Filter
-                </button>
               </div>
               <!-- categories-offcanvas -->
 
               <div class="offcanvas offcanvas-end" tabindex="-1" id="categories-offcanvas"
-                aria-labelledby="offcanvasExampleLabel">
+                aria-labelledby="offcanvasRightLabel" data-bs-scroll="false" data-bs-backdrop="true">
                 <div class="offcanvas-header">
                   <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                     aria-label="Close"></button>
@@ -1440,7 +1441,8 @@
   <!-- FOOTER-SECTION-END -->
 
   <!-- BOOTSTRAP-JS -->
-  <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+  <!-- <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Swiper JS -->
   <script src="./assets/js/swiper/swiper.js"></script>
   <script src="./assets/js/swiper/swiper-custome.js"></script>

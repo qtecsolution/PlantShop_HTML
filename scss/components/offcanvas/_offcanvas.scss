@@ -1,5 +1,5 @@
-@use '../../global' as *;
-@use '../../partials' as *;
+@use "../../global" as *;
+@use "../../partials" as *;
 
 .offcanvas {
   background: $white;
@@ -20,6 +20,7 @@
 
   &.offcanvas-end {
     border-left: 0;
+    width: size(280);
   }
 
   &-header {
