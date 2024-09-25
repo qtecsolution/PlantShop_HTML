@@ -4478,7 +4478,11 @@ main {
   color: #475569;
   font-weight: normal;
   padding-left: 12px;
-  padding-right: 100px;
+}
+@media screen and (min-width: 48rem) {
+  .categories-inner .short-by .nice-select {
+    padding-right: 100px;
+  }
 }
 .categories-inner .short-by .nice-select span {
   font-family: "Onest", sans-serif;
@@ -4642,6 +4646,82 @@ main {
 }
 .pagination-items .pagination-body .active .page-link {
   color: hsl(0, 0%, 100%);
+}
+
+.price-range {
+  border-radius: 0.25rem;
+  background: hsl(0, 0%, 100%);
+  padding: 1rem;
+}
+.price-range .price-range-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 2.1875rem;
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+  color: #0f172a;
+  font-family: "Onest", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.price-range .price-range-checkbox:last-child {
+  margin-bottom: 0rem;
+}
+.price-range .price-range-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.price-range .price-range-checkbox input:checked ~ .checkmark {
+  background-color: #00715d;
+}
+.price-range .price-range-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+.price-range .price-range-checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.25rem;
+  width: 1.25rem;
+  border: 0.0625rem solid #cbd5e1;
+  border-radius: 0.1875rem;
+}
+.price-range .price-range-checkbox .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 0.375rem;
+  top: 0.0625rem;
+  width: 0.375rem;
+  height: 0.75rem;
+  border: solid white;
+  border-width: 0rem 0.1875rem 0.1875rem 0rem;
+  transform: rotate(45deg);
+}
+
+.categories-title {
+  color: #0f172a;
+  font-family: "Onest", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.categories-menu-open {
+  border: none;
+  border-radius: 0.25rem;
+  padding-top: 0.375rem;
+  font-family: "Onest", sans-serif;
+  color: #475569;
+  font-weight: 500;
 }
 
 .product-details-inner .inner-product-details .product-name {
